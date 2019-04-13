@@ -954,7 +954,6 @@
 		320F7407225796A90075679E /* emmintrin_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emmintrin_compat.h; sourceTree = "<group>"; };
 		320F7408225796A90075679E /* x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x86.h; sourceTree = "<group>"; };
 		320F7409225796A90075679E /* msvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msvc.h; sourceTree = "<group>"; };
-		320F740F225796A90075679E /* arm_cpudetect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arm_cpudetect.c; sourceTree = "<group>"; };
 		320F7410225796A90075679E /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
 		320F7411225796A90075679E /* aom_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aom_timer.h; sourceTree = "<group>"; };
 		320F7413225796A90075679E /* blend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blend.h; sourceTree = "<group>"; };
@@ -1482,7 +1481,6 @@
 				320F7407225796A90075679E /* emmintrin_compat.h */,
 				320F7408225796A90075679E /* x86.h */,
 				320F7409225796A90075679E /* msvc.h */,
-				320F740F225796A90075679E /* arm_cpudetect.c */,
 				320F7410225796A90075679E /* mem.h */,
 				320F7411225796A90075679E /* aom_timer.h */,
 			);
