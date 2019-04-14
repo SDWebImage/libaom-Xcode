@@ -177,49 +177,6 @@
 		320F7660225796AA0075679E /* obmc.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F726F225796A90075679E /* obmc.h */; };
 		320F7661225796AA0075679E /* frame_buffers.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7270225796A90075679E /* frame_buffers.c */; };
 		320F7662225796AA0075679E /* reconinter.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7271225796A90075679E /* reconinter.c */; };
-		320F7663225796AA0075679E /* highbd_inv_txfm_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7273225796A90075679E /* highbd_inv_txfm_sse4.c */; };
-		320F7664225796AA0075679E /* highbd_convolve_2d_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7274225796A90075679E /* highbd_convolve_2d_avx2.c */; };
-		320F7665225796AA0075679E /* wiener_convolve_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7275225796A90075679E /* wiener_convolve_sse2.c */; };
-		320F7666225796AA0075679E /* highbd_txfm_utility_sse4.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F7276225796A90075679E /* highbd_txfm_utility_sse4.h */; };
-		320F7667225796AA0075679E /* av1_convolve_horiz_rs_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7277225796A90075679E /* av1_convolve_horiz_rs_sse4.c */; };
-		320F7668225796AA0075679E /* av1_inv_txfm_ssse3.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7278225796A90075679E /* av1_inv_txfm_ssse3.c */; };
-		320F7669225796AA0075679E /* cfl_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7279225796A90075679E /* cfl_sse2.c */; };
-		320F766A225796AA0075679E /* selfguided_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F727A225796A90075679E /* selfguided_sse4.c */; };
-		320F766B225796AA0075679E /* av1_inv_txfm_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F727B225796A90075679E /* av1_inv_txfm_avx2.c */; };
-		320F766C225796AA0075679E /* cfl_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F727C225796A90075679E /* cfl_avx2.c */; };
-		320F766D225796AA0075679E /* cfl_ssse3.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F727D225796A90075679E /* cfl_ssse3.c */; };
-		320F766E225796AA0075679E /* reconinter_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F727E225796A90075679E /* reconinter_avx2.c */; };
-		320F766F225796AA0075679E /* jnt_convolve_ssse3.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F727F225796A90075679E /* jnt_convolve_ssse3.c */; };
-		320F7670225796AA0075679E /* av1_txfm_sse4.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F7280225796A90075679E /* av1_txfm_sse4.h */; };
-		320F7671225796AA0075679E /* warp_plane_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7281225796A90075679E /* warp_plane_sse4.c */; };
-		320F7672225796AA0075679E /* highbd_convolve_2d_ssse3.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7282225796A90075679E /* highbd_convolve_2d_ssse3.c */; };
-		320F7673225796AA0075679E /* highbd_jnt_convolve_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7283225796A90075679E /* highbd_jnt_convolve_sse4.c */; };
-		320F7674225796AA0075679E /* cfl_simd.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F7284225796A90075679E /* cfl_simd.h */; };
-		320F7675225796AA0075679E /* wiener_convolve_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7285225796A90075679E /* wiener_convolve_avx2.c */; };
-		320F7676225796AA0075679E /* highbd_convolve_2d_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7286225796A90075679E /* highbd_convolve_2d_sse2.c */; };
-		320F7677225796AA0075679E /* reconinter_ssse3.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7287225796A90075679E /* reconinter_ssse3.c */; };
-		320F7678225796AA0075679E /* av1_inv_txfm_ssse3.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F7288225796A90075679E /* av1_inv_txfm_ssse3.h */; };
-		320F7679225796AA0075679E /* reconinter_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7289225796A90075679E /* reconinter_sse4.c */; };
-		320F767A225796AA0075679E /* convolve_2d_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F728A225796A90075679E /* convolve_2d_avx2.c */; };
-		320F767B225796AA0075679E /* highbd_jnt_convolve_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F728B225796A90075679E /* highbd_jnt_convolve_avx2.c */; };
-		320F767C225796AA0075679E /* highbd_warp_plane_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F728C225796A90075679E /* highbd_warp_plane_sse4.c */; };
-		320F767D225796AA0075679E /* jnt_convolve_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F728D225796A90075679E /* jnt_convolve_sse2.c */; };
-		320F767E225796AA0075679E /* intra_edge_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F728E225796A90075679E /* intra_edge_sse4.c */; };
-		320F767F225796AA0075679E /* convolve_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F728F225796A90075679E /* convolve_avx2.c */; };
-		320F7680225796AA0075679E /* av1_highbd_convolve_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7290225796A90075679E /* av1_highbd_convolve_sse4.c */; };
-		320F7681225796AA0075679E /* highbd_wiener_convolve_ssse3.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7291225796A90075679E /* highbd_wiener_convolve_ssse3.c */; };
-		320F7682225796AA0075679E /* av1_convolve_scale_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7292225796A90075679E /* av1_convolve_scale_sse4.c */; };
-		320F7683225796AA0075679E /* convolve_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7293225796A90075679E /* convolve_sse2.c */; };
-		320F7684225796AA0075679E /* av1_inv_txfm_avx2.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F7294225796A90075679E /* av1_inv_txfm_avx2.h */; };
-		320F7685225796AA0075679E /* selfguided_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7295225796A90075679E /* selfguided_avx2.c */; };
-		320F7686225796AA0075679E /* jnt_convolve_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7296225796A90075679E /* jnt_convolve_avx2.c */; };
-		320F7687225796AA0075679E /* filterintra_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7297225796A90075679E /* filterintra_sse4.c */; };
-		320F7688225796AA0075679E /* highbd_convolve_2d_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7298225796A90075679E /* highbd_convolve_2d_sse4.c */; };
-		320F7689225796AA0075679E /* highbd_wiener_convolve_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F7299225796A90075679E /* highbd_wiener_convolve_avx2.c */; };
-		320F768A225796AA0075679E /* highbd_inv_txfm_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F729A225796A90075679E /* highbd_inv_txfm_avx2.c */; };
-		320F768B225796AA0075679E /* convolve_2d_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F729B225796A90075679E /* convolve_2d_sse2.c */; };
-		320F768C225796AA0075679E /* av1_txfm_sse4.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F729C225796A90075679E /* av1_txfm_sse4.c */; };
-		320F768D225796AA0075679E /* av1_txfm_sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F729D225796A90075679E /* av1_txfm_sse2.h */; };
 		320F768E225796AA0075679E /* av1_rtcd.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F729E225796A90075679E /* av1_rtcd.c */; };
 		320F768F225796AA0075679E /* pred_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 320F729F225796A90075679E /* pred_common.c */; };
 		320F7690225796AA0075679E /* onyxc_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F72A0225796A90075679E /* onyxc_int.h */; };
@@ -849,49 +806,6 @@
 		320F726F225796A90075679E /* obmc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obmc.h; sourceTree = "<group>"; };
 		320F7270225796A90075679E /* frame_buffers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frame_buffers.c; sourceTree = "<group>"; };
 		320F7271225796A90075679E /* reconinter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reconinter.c; sourceTree = "<group>"; };
-		320F7273225796A90075679E /* highbd_inv_txfm_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_inv_txfm_sse4.c; sourceTree = "<group>"; };
-		320F7274225796A90075679E /* highbd_convolve_2d_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_convolve_2d_avx2.c; sourceTree = "<group>"; };
-		320F7275225796A90075679E /* wiener_convolve_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wiener_convolve_sse2.c; sourceTree = "<group>"; };
-		320F7276225796A90075679E /* highbd_txfm_utility_sse4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highbd_txfm_utility_sse4.h; sourceTree = "<group>"; };
-		320F7277225796A90075679E /* av1_convolve_horiz_rs_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_convolve_horiz_rs_sse4.c; sourceTree = "<group>"; };
-		320F7278225796A90075679E /* av1_inv_txfm_ssse3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_inv_txfm_ssse3.c; sourceTree = "<group>"; };
-		320F7279225796A90075679E /* cfl_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfl_sse2.c; sourceTree = "<group>"; };
-		320F727A225796A90075679E /* selfguided_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selfguided_sse4.c; sourceTree = "<group>"; };
-		320F727B225796A90075679E /* av1_inv_txfm_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_inv_txfm_avx2.c; sourceTree = "<group>"; };
-		320F727C225796A90075679E /* cfl_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfl_avx2.c; sourceTree = "<group>"; };
-		320F727D225796A90075679E /* cfl_ssse3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfl_ssse3.c; sourceTree = "<group>"; };
-		320F727E225796A90075679E /* reconinter_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reconinter_avx2.c; sourceTree = "<group>"; };
-		320F727F225796A90075679E /* jnt_convolve_ssse3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jnt_convolve_ssse3.c; sourceTree = "<group>"; };
-		320F7280225796A90075679E /* av1_txfm_sse4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = av1_txfm_sse4.h; sourceTree = "<group>"; };
-		320F7281225796A90075679E /* warp_plane_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = warp_plane_sse4.c; sourceTree = "<group>"; };
-		320F7282225796A90075679E /* highbd_convolve_2d_ssse3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_convolve_2d_ssse3.c; sourceTree = "<group>"; };
-		320F7283225796A90075679E /* highbd_jnt_convolve_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_jnt_convolve_sse4.c; sourceTree = "<group>"; };
-		320F7284225796A90075679E /* cfl_simd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfl_simd.h; sourceTree = "<group>"; };
-		320F7285225796A90075679E /* wiener_convolve_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wiener_convolve_avx2.c; sourceTree = "<group>"; };
-		320F7286225796A90075679E /* highbd_convolve_2d_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_convolve_2d_sse2.c; sourceTree = "<group>"; };
-		320F7287225796A90075679E /* reconinter_ssse3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reconinter_ssse3.c; sourceTree = "<group>"; };
-		320F7288225796A90075679E /* av1_inv_txfm_ssse3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = av1_inv_txfm_ssse3.h; sourceTree = "<group>"; };
-		320F7289225796A90075679E /* reconinter_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reconinter_sse4.c; sourceTree = "<group>"; };
-		320F728A225796A90075679E /* convolve_2d_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convolve_2d_avx2.c; sourceTree = "<group>"; };
-		320F728B225796A90075679E /* highbd_jnt_convolve_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_jnt_convolve_avx2.c; sourceTree = "<group>"; };
-		320F728C225796A90075679E /* highbd_warp_plane_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_warp_plane_sse4.c; sourceTree = "<group>"; };
-		320F728D225796A90075679E /* jnt_convolve_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jnt_convolve_sse2.c; sourceTree = "<group>"; };
-		320F728E225796A90075679E /* intra_edge_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = intra_edge_sse4.c; sourceTree = "<group>"; };
-		320F728F225796A90075679E /* convolve_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convolve_avx2.c; sourceTree = "<group>"; };
-		320F7290225796A90075679E /* av1_highbd_convolve_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_highbd_convolve_sse4.c; sourceTree = "<group>"; };
-		320F7291225796A90075679E /* highbd_wiener_convolve_ssse3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_wiener_convolve_ssse3.c; sourceTree = "<group>"; };
-		320F7292225796A90075679E /* av1_convolve_scale_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_convolve_scale_sse4.c; sourceTree = "<group>"; };
-		320F7293225796A90075679E /* convolve_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convolve_sse2.c; sourceTree = "<group>"; };
-		320F7294225796A90075679E /* av1_inv_txfm_avx2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = av1_inv_txfm_avx2.h; sourceTree = "<group>"; };
-		320F7295225796A90075679E /* selfguided_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selfguided_avx2.c; sourceTree = "<group>"; };
-		320F7296225796A90075679E /* jnt_convolve_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jnt_convolve_avx2.c; sourceTree = "<group>"; };
-		320F7297225796A90075679E /* filterintra_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filterintra_sse4.c; sourceTree = "<group>"; };
-		320F7298225796A90075679E /* highbd_convolve_2d_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_convolve_2d_sse4.c; sourceTree = "<group>"; };
-		320F7299225796A90075679E /* highbd_wiener_convolve_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_wiener_convolve_avx2.c; sourceTree = "<group>"; };
-		320F729A225796A90075679E /* highbd_inv_txfm_avx2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = highbd_inv_txfm_avx2.c; sourceTree = "<group>"; };
-		320F729B225796A90075679E /* convolve_2d_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convolve_2d_sse2.c; sourceTree = "<group>"; };
-		320F729C225796A90075679E /* av1_txfm_sse4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_txfm_sse4.c; sourceTree = "<group>"; };
-		320F729D225796A90075679E /* av1_txfm_sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = av1_txfm_sse2.h; sourceTree = "<group>"; };
 		320F729E225796A90075679E /* av1_rtcd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av1_rtcd.c; sourceTree = "<group>"; };
 		320F729F225796A90075679E /* pred_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pred_common.c; sourceTree = "<group>"; };
 		320F72A0225796A90075679E /* onyxc_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = onyxc_int.h; sourceTree = "<group>"; };
@@ -1317,7 +1231,6 @@
 				320F726F225796A90075679E /* obmc.h */,
 				320F7270225796A90075679E /* frame_buffers.c */,
 				320F7271225796A90075679E /* reconinter.c */,
-				320F7272225796A90075679E /* x86 */,
 				320F729E225796A90075679E /* av1_rtcd.c */,
 				320F729F225796A90075679E /* pred_common.c */,
 				320F72A0225796A90075679E /* onyxc_int.h */,
@@ -1348,56 +1261,6 @@
 				320F72C6225796A90075679E /* av1_txfm.h */,
 			);
 			path = common;
-			sourceTree = "<group>";
-		};
-		320F7272225796A90075679E /* x86 */ = {
-			isa = PBXGroup;
-			children = (
-				320F7273225796A90075679E /* highbd_inv_txfm_sse4.c */,
-				320F7274225796A90075679E /* highbd_convolve_2d_avx2.c */,
-				320F7275225796A90075679E /* wiener_convolve_sse2.c */,
-				320F7276225796A90075679E /* highbd_txfm_utility_sse4.h */,
-				320F7277225796A90075679E /* av1_convolve_horiz_rs_sse4.c */,
-				320F7278225796A90075679E /* av1_inv_txfm_ssse3.c */,
-				320F7279225796A90075679E /* cfl_sse2.c */,
-				320F727A225796A90075679E /* selfguided_sse4.c */,
-				320F727B225796A90075679E /* av1_inv_txfm_avx2.c */,
-				320F727C225796A90075679E /* cfl_avx2.c */,
-				320F727D225796A90075679E /* cfl_ssse3.c */,
-				320F727E225796A90075679E /* reconinter_avx2.c */,
-				320F727F225796A90075679E /* jnt_convolve_ssse3.c */,
-				320F7280225796A90075679E /* av1_txfm_sse4.h */,
-				320F7281225796A90075679E /* warp_plane_sse4.c */,
-				320F7282225796A90075679E /* highbd_convolve_2d_ssse3.c */,
-				320F7283225796A90075679E /* highbd_jnt_convolve_sse4.c */,
-				320F7284225796A90075679E /* cfl_simd.h */,
-				320F7285225796A90075679E /* wiener_convolve_avx2.c */,
-				320F7286225796A90075679E /* highbd_convolve_2d_sse2.c */,
-				320F7287225796A90075679E /* reconinter_ssse3.c */,
-				320F7288225796A90075679E /* av1_inv_txfm_ssse3.h */,
-				320F7289225796A90075679E /* reconinter_sse4.c */,
-				320F728A225796A90075679E /* convolve_2d_avx2.c */,
-				320F728B225796A90075679E /* highbd_jnt_convolve_avx2.c */,
-				320F728C225796A90075679E /* highbd_warp_plane_sse4.c */,
-				320F728D225796A90075679E /* jnt_convolve_sse2.c */,
-				320F728E225796A90075679E /* intra_edge_sse4.c */,
-				320F728F225796A90075679E /* convolve_avx2.c */,
-				320F7290225796A90075679E /* av1_highbd_convolve_sse4.c */,
-				320F7291225796A90075679E /* highbd_wiener_convolve_ssse3.c */,
-				320F7292225796A90075679E /* av1_convolve_scale_sse4.c */,
-				320F7293225796A90075679E /* convolve_sse2.c */,
-				320F7294225796A90075679E /* av1_inv_txfm_avx2.h */,
-				320F7295225796A90075679E /* selfguided_avx2.c */,
-				320F7296225796A90075679E /* jnt_convolve_avx2.c */,
-				320F7297225796A90075679E /* filterintra_sse4.c */,
-				320F7298225796A90075679E /* highbd_convolve_2d_sse4.c */,
-				320F7299225796A90075679E /* highbd_wiener_convolve_avx2.c */,
-				320F729A225796A90075679E /* highbd_inv_txfm_avx2.c */,
-				320F729B225796A90075679E /* convolve_2d_sse2.c */,
-				320F729C225796A90075679E /* av1_txfm_sse4.c */,
-				320F729D225796A90075679E /* av1_txfm_sse2.h */,
-			);
-			path = x86;
 			sourceTree = "<group>";
 		};
 		320F72CB225796A90075679E /* aom_util */ = {
@@ -1668,7 +1531,6 @@
 				320F7809225796AA0075679E /* binary_codes_reader.h in Headers */,
 				320F76CC225796AA0075679E /* aomcx.h in Headers */,
 				320F77DD225796AA0075679E /* mem.h in Headers */,
-				320F768D225796AA0075679E /* av1_txfm_sse2.h in Headers */,
 				320F76C9225796AA0075679E /* aom_image.h in Headers */,
 				320F7645225796AA0075679E /* mv.h in Headers */,
 				32E7440022579BBA0008FC73 /* aom_version.h in Headers */,
@@ -1709,7 +1571,6 @@
 				320F75C2225796A90075679E /* cost.h in Headers */,
 				320F76CB225796AA0075679E /* aom_decoder.h in Headers */,
 				320F75FF225796A90075679E /* block.h in Headers */,
-				320F7678225796AA0075679E /* av1_inv_txfm_ssse3.h in Headers */,
 				320F7618225796A90075679E /* global_motion.h in Headers */,
 				320F75DB225796A90075679E /* palette.h in Headers */,
 				320F76B5225796AA0075679E /* av1_txfm.h in Headers */,
@@ -1747,8 +1608,6 @@
 				320F7652225796AA0075679E /* entropy.h in Headers */,
 				320F7630225796AA0075679E /* warped_motion.h in Headers */,
 				320F77E3225796AA0075679E /* quantize.h in Headers */,
-				320F7674225796AA0075679E /* cfl_simd.h in Headers */,
-				320F7670225796AA0075679E /* av1_txfm_sse4.h in Headers */,
 				320F75A5225796A90075679E /* pustats.h in Headers */,
 				320F77F3225796AA0075679E /* entdec.h in Headers */,
 				320F77CF225796AA0075679E /* mem_ops.h in Headers */,
@@ -1773,10 +1632,8 @@
 				32E747B32257A3680008FC73 /* fast.h in Headers */,
 				320F75CF225796A90075679E /* ab_partition_model_weights.h in Headers */,
 				320F760C225796A90075679E /* context_tree.h in Headers */,
-				320F7666225796AA0075679E /* highbd_txfm_utility_sse4.h in Headers */,
 				320F76A8225796AA0075679E /* odintrin.h in Headers */,
 				320F75C9225796A90075679E /* hash_motion.h in Headers */,
-				320F7684225796AA0075679E /* av1_inv_txfm_avx2.h in Headers */,
 				320F7830225796AA0075679E /* noise_util.h in Headers */,
 				320F7807225796AA0075679E /* psnr.h in Headers */,
 				320F7608225796A90075679E /* corner_match.h in Headers */,
@@ -2089,14 +1946,11 @@
 				320F76AC225796AA0075679E /* convolve.c in Sources */,
 				320F760B225796A90075679E /* cost.c in Sources */,
 				32E747B42257A3680008FC73 /* nonmax.c in Sources */,
-				320F767C225796AA0075679E /* highbd_warp_plane_sse4.c in Sources */,
-				320F7681225796AA0075679E /* highbd_wiener_convolve_ssse3.c in Sources */,
 				320F7696225796AA0075679E /* cdef_block_ssse3.c in Sources */,
 				320F76AB225796AA0075679E /* entropy.c in Sources */,
 				320F763D225796AA0075679E /* odintrin.c in Sources */,
 				320F75B5225796A90075679E /* dwt.c in Sources */,
 				320F75D7225796A90075679E /* encodemv.c in Sources */,
-				320F767F225796AA0075679E /* convolve_avx2.c in Sources */,
 				320F764B225796AA0075679E /* cdef_block_neon.c in Sources */,
 				320F782E225796AA0075679E /* sum_squares.c in Sources */,
 				320F7632225796AA0075679E /* alloccommon.c in Sources */,
@@ -2108,7 +1962,6 @@
 				320F75CB225796A90075679E /* temporal_filter.c in Sources */,
 				32E747B72257A3680008FC73 /* fast_9.c in Sources */,
 				320F75AE225796A90075679E /* rd.c in Sources */,
-				320F7671225796AA0075679E /* warp_plane_sse4.c in Sources */,
 				320F75BC225796A90075679E /* encoder.c in Sources */,
 				320F762E225796AA0075679E /* cdef_block_sse2.c in Sources */,
 				320F74F5225796A90075679E /* gen_scalers.c in Sources */,
@@ -2117,7 +1970,6 @@
 				320F7892225796AA0075679E /* entdec.c in Sources */,
 				320F75A9225796A90075679E /* bitstream.c in Sources */,
 				320F7634225796AA0075679E /* resize.c in Sources */,
-				320F766E225796AA0075679E /* reconinter_avx2.c in Sources */,
 				320F7623225796A90075679E /* accounting.c in Sources */,
 				320F75CD225796A90075679E /* av1_fwd_txfm2d.c in Sources */,
 				320F7653225796AA0075679E /* filter.c in Sources */,
@@ -2128,51 +1980,37 @@
 				320F764A225796AA0075679E /* entropymode.c in Sources */,
 				320F78A2225796AA0075679E /* psnr.c in Sources */,
 				320F75A7225796A90075679E /* wedge_utils.c in Sources */,
-				320F7673225796AA0075679E /* highbd_jnt_convolve_sse4.c in Sources */,
-				320F7668225796AA0075679E /* av1_inv_txfm_ssse3.c in Sources */,
 				320F78A4225796AA0075679E /* fwd_txfm.c in Sources */,
 				320F762A225796AA0075679E /* decodetxb.c in Sources */,
 				320F74F3225796A90075679E /* yv12config.c in Sources */,
 				320F75FA225796A90075679E /* picklpf.c in Sources */,
 				320F76CD225796AA0075679E /* aom_image.c in Sources */,
-				320F7687225796AA0075679E /* filterintra_sse4.c in Sources */,
 				320F77E5225796AA0075679E /* subtract.c in Sources */,
 				320F75D2225796A90075679E /* ratectrl_xiph.c in Sources */,
 				320F7805225796AA0075679E /* daalaboolreader.c in Sources */,
 				320F7833225796AA0075679E /* fft.c in Sources */,
-				320F7679225796AA0075679E /* reconinter_sse4.c in Sources */,
 				320F7607225796A90075679E /* aq_complexity.c in Sources */,
-				320F7676225796AA0075679E /* highbd_convolve_2d_sse2.c in Sources */,
-				320F7680225796AA0075679E /* av1_highbd_convolve_sse4.c in Sources */,
 				320F7617225796A90075679E /* hash_motion.c in Sources */,
 				320F7648225796AA0075679E /* thread_common.c in Sources */,
 				320F74F2225796A90075679E /* yv12extend.c in Sources */,
 				320F76BE225796AA0075679E /* aom_thread.c in Sources */,
-				320F767D225796AA0075679E /* jnt_convolve_sse2.c in Sources */,
 				320F769A225796AA0075679E /* idct.c in Sources */,
 				320F7662225796AA0075679E /* reconinter.c in Sources */,
 				320F77F6225796AA0075679E /* variance.c in Sources */,
 				320F75B2225796A90075679E /* rdopt.c in Sources */,
-				320F768B225796AA0075679E /* convolve_2d_sse2.c in Sources */,
-				320F7663225796AA0075679E /* highbd_inv_txfm_sse4.c in Sources */,
 				320F75D1225796A90075679E /* hash.c in Sources */,
-				320F7664225796AA0075679E /* highbd_convolve_2d_avx2.c in Sources */,
-				320F767E225796AA0075679E /* intra_edge_sse4.c in Sources */,
 				320F789F225796AA0075679E /* add_noise.c in Sources */,
 				320F75A3225796A90075679E /* av1_dx_iface.c in Sources */,
 				320F7655225796AA0075679E /* cdef.c in Sources */,
 				320F762C225796AA0075679E /* decodemv.c in Sources */,
 				320F7831225796AA0075679E /* bitreader_buffer.c in Sources */,
-				320F7686225796AA0075679E /* jnt_convolve_avx2.c in Sources */,
 				320F77EE225796AA0075679E /* loopfilter.c in Sources */,
 				320F77E1225796AA0075679E /* blend_a64_vmask.c in Sources */,
 				320F762F225796AA0075679E /* seg_common.c in Sources */,
 				320F76CF225796AA0075679E /* aom_decoder.c in Sources */,
 				320F7602225796A90075679E /* corner_detect.c in Sources */,
-				320F7669225796AA0075679E /* cfl_sse2.c in Sources */,
 				320F75C7225796A90075679E /* corner_match.c in Sources */,
 				320F75BA225796A90075679E /* blockiness.c in Sources */,
-				320F767A225796AA0075679E /* convolve_2d_avx2.c in Sources */,
 				320F765C225796AA0075679E /* cdef_block_sse4.c in Sources */,
 				320F7644225796AA0075679E /* av1_loopfilter.c in Sources */,
 				320F74F4225796A90075679E /* aom_scale.c in Sources */,
@@ -2182,25 +2020,19 @@
 				320F788D225796AA0075679E /* entenc.c in Sources */,
 				320F788C225796AA0075679E /* binary_codes_writer.c in Sources */,
 				320F764D225796AA0075679E /* entropymv.c in Sources */,
-				320F768C225796AA0075679E /* av1_txfm_sse4.c in Sources */,
 				320F75CC225796A90075679E /* global_motion.c in Sources */,
-				320F7675225796AA0075679E /* wiener_convolve_avx2.c in Sources */,
 				320F7887225796AA0075679E /* bitwriter_buffer.c in Sources */,
-				320F7688225796AA0075679E /* highbd_convolve_2d_sse4.c in Sources */,
 				320F7698225796AA0075679E /* timing.c in Sources */,
 				320F782F225796AA0075679E /* quantize.c in Sources */,
 				320F7628225796AA0075679E /* decoder.c in Sources */,
 				320F764C225796AA0075679E /* av1_txfm.c in Sources */,
 				320F765E225796AA0075679E /* warped_motion.c in Sources */,
-				320F766F225796AA0075679E /* jnt_convolve_ssse3.c in Sources */,
 				320F789D225796AA0075679E /* blend_a64_mask.c in Sources */,
 				320F75B1225796A90075679E /* hybrid_fwd_txfm.c in Sources */,
-				320F766B225796AA0075679E /* av1_inv_txfm_avx2.c in Sources */,
 				320F7808225796AA0075679E /* aom_convolve.c in Sources */,
 				320F75FD225796A90075679E /* encodeframe.c in Sources */,
 				320F75D6225796A90075679E /* mbgraph.c in Sources */,
 				320F788E225796AA0075679E /* intrapred.c in Sources */,
-				320F767B225796AA0075679E /* highbd_jnt_convolve_avx2.c in Sources */,
 				320F760D225796A90075679E /* speed_features.c in Sources */,
 				320F7615225796A90075679E /* aq_cyclicrefresh.c in Sources */,
 				320F7657225796AA0075679E /* cfl.c in Sources */,
@@ -2211,7 +2043,6 @@
 				320F75F8225796A90075679E /* aq_variance.c in Sources */,
 				320F76A7225796AA0075679E /* cdef_block.c in Sources */,
 				320F76B1225796AA0075679E /* restoration.c in Sources */,
-				320F768A225796AA0075679E /* highbd_inv_txfm_avx2.c in Sources */,
 				320F7835225796AA0075679E /* noise_model.c in Sources */,
 				320F761C225796A90075679E /* dthread.c in Sources */,
 				320F7890225796AA0075679E /* daalaboolwriter.c in Sources */,
@@ -2219,8 +2050,6 @@
 				320F7654225796AA0075679E /* cdef_block_avx2.c in Sources */,
 				320F7649225796AA0075679E /* scan.c in Sources */,
 				320F75A8225796A90075679E /* av1_quantize.c in Sources */,
-				320F766C225796AA0075679E /* cfl_avx2.c in Sources */,
-				320F7672225796AA0075679E /* highbd_convolve_2d_ssse3.c in Sources */,
 				320F75B9225796A90075679E /* encodemb.c in Sources */,
 				320F75A6225796A90075679E /* firstpass.c in Sources */,
 				32E747B82257A3680008FC73 /* fast.c in Sources */,
@@ -2229,8 +2058,6 @@
 				320F76AD225796AA0075679E /* blockd.c in Sources */,
 				320F788F225796AA0075679E /* aom_dsp_rtcd.c in Sources */,
 				320F75B6225796A90075679E /* segmentation.c in Sources */,
-				320F7689225796AA0075679E /* highbd_wiener_convolve_avx2.c in Sources */,
-				320F766A225796AA0075679E /* selfguided_sse4.c in Sources */,
 				320F7624225796A90075679E /* obu.c in Sources */,
 				320F7804225796AA0075679E /* sad_av1.c in Sources */,
 				320F77EA225796AA0075679E /* grain_table.c in Sources */,
@@ -2239,30 +2066,23 @@
 				320F7627225796AA0075679E /* detokenize.c in Sources */,
 				320F7661225796AA0075679E /* frame_buffers.c in Sources */,
 				320F75C4225796A90075679E /* pickcdef.c in Sources */,
-				320F7685225796AA0075679E /* selfguided_avx2.c in Sources */,
 				320F7626225796AA0075679E /* decodeframe.c in Sources */,
 				320F75D8225796A90075679E /* av1_fwd_txfm1d.c in Sources */,
 				320F7639225796AA0075679E /* quant_common.c in Sources */,
 				320F7694225796AA0075679E /* av1_inv_txfm1d.c in Sources */,
 				320F7806225796AA0075679E /* blend_a64_hmask.c in Sources */,
-				320F7667225796AA0075679E /* av1_convolve_horiz_rs_sse4.c in Sources */,
 				320F76CE225796AA0075679E /* aom_codec.c in Sources */,
 				320F77E6225796AA0075679E /* binary_codes_reader.c in Sources */,
 				320F7605225796A90075679E /* ratectrl.c in Sources */,
 				320F75D0225796A90075679E /* lookahead.c in Sources */,
 				320F7693225796AA0075679E /* tile_common.c in Sources */,
 				320F75DA225796A90075679E /* encodetxb.c in Sources */,
-				320F766D225796AA0075679E /* cfl_ssse3.c in Sources */,
-				320F7677225796AA0075679E /* reconinter_ssse3.c in Sources */,
 				320F77E2225796AA0075679E /* noise_util.c in Sources */,
-				320F7682225796AA0075679E /* av1_convolve_scale_sse4.c in Sources */,
 				320F7642225796AA0075679E /* txb_common.c in Sources */,
 				320F75E0225796A90075679E /* pickrst.c in Sources */,
-				320F7665225796AA0075679E /* wiener_convolve_sse2.c in Sources */,
 				320F7638225796AA0075679E /* av1_inv_txfm2d.c in Sources */,
 				320F7606225796A90075679E /* tokenize.c in Sources */,
 				32E743FE22579BBA0008FC73 /* aom_config.c in Sources */,
-				320F7683225796AA0075679E /* convolve_sse2.c in Sources */,
 				320F75AD225796A90075679E /* palette.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
