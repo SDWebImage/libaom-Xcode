@@ -27,7 +27,7 @@ Codec library for encoding and decoding AV1 video streams
   s.source           = { :git => 'https://github.com/dreampiggy/libaom-Xcode.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.10'
+  s.osx.deployment_target = '10.7'
 
   s.source_files = 'include/aom/*.h'
   s.public_header_files = 'include/aom/*.h'

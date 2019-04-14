@@ -23,6 +23,8 @@ Current macOS using the `AVX/AVX2` instruction. If the target Mac CPU does not s
 
 On iOS, due to lack of dynamic CPU detect and the suck of CocoaPods/Carthage, we disable the NEON instruction.
 
+If you want the best performance for specify architecture, use the pre-build static library in `lib` instead.
+
 ## Installation
 
 ### Carthage
