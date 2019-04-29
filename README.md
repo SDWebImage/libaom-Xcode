@@ -22,7 +22,7 @@ This repo also including the CocoaPods's spec file to use libaom.
 
 From v1.0.1, this Carthage and CocoaPods support, disable the architecture specify assembly code, and use the pure C implementation instead. This because both the lack support for CocoaPods and Xcode NASM compiler.
 
-If you want the best performance for specify architecture, use the pre-build static library in `lib` instead. Which use the CMake and NASM with the full assembly optimization.
+If you want the best performance for specify architecture, use the pre-build static library in `lib` from [1.0.0 release](https://github.com/SDWebImage/libaom-Xcode/releases/tag/1.0.0). Which use the CMake and NASM with the full assembly optimization.
 
 ## Installation
 
