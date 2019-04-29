@@ -19,11 +19,10 @@ This repo also including the CocoaPods's spec file to use libaom.
 + watchOS 2.0
 
 ## Note
-Current macOS using the `AVX/AVX2` instruction. If the target Mac CPU does not support, wait for upstream to support the dynamic CPU detect.
 
-On iOS, due to lack of dynamic CPU detect and the suck of CocoaPods/Carthage, we disable the NEON instruction.
+From v1.0.1, this Carthage and CocoaPods support, disable the architecture specify assembly code, and use the pure C implementation instead. This because both the lack support for CocoaPods and Xcode NASM compiler.
 
-If you want the best performance for specify architecture, use the pre-build static library in `lib` instead.
+If you want the best performance for specify architecture, use the pre-build static library in `lib` instead. Which use the CMake and NASM with the full assembly optimization.
 
 ## Installation
 

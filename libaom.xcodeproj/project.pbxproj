@@ -2415,7 +2415,6 @@
 		320F70E22257912C0075679E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_X86_VECTOR_INSTRUCTIONS = avx2;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -2441,7 +2440,6 @@
 		320F70E32257912C0075679E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_X86_VECTOR_INSTRUCTIONS = avx2;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
