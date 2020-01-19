@@ -291,6 +291,58 @@
 		320F78A7225796AA0075679E /* daalaboolreader.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F74DF225796A90075679E /* daalaboolreader.h */; };
 		320F78A8225796AA0075679E /* postproc.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F74E0225796A90075679E /* postproc.h */; };
 		320F78A9225796AA0075679E /* variance.h in Headers */ = {isa = PBXBuildFile; fileRef = 320F74E1225796A90075679E /* variance.h */; };
+		32A278FC23D45C6B00C1ACED /* loopfiltermask.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A278FB23D45C6B00C1ACED /* loopfiltermask.c */; };
+		32A278FD23D45C6B00C1ACED /* loopfiltermask.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A278FB23D45C6B00C1ACED /* loopfiltermask.c */; };
+		32A278FF23D45C7C00C1ACED /* blk_sse_sum.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A278FE23D45C7C00C1ACED /* blk_sse_sum.c */; };
+		32A2790023D45C7C00C1ACED /* blk_sse_sum.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A278FE23D45C7C00C1ACED /* blk_sse_sum.c */; };
+		32A2790223D45CAA00C1ACED /* aom_image_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790123D45CAA00C1ACED /* aom_image_internal.h */; };
+		32A2790323D45CAA00C1ACED /* aom_image_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790123D45CAA00C1ACED /* aom_image_internal.h */; };
+		32A2790623D45D2900C1ACED /* cnn.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2790423D45D2900C1ACED /* cnn.c */; };
+		32A2790723D45D2900C1ACED /* cnn.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2790423D45D2900C1ACED /* cnn.c */; };
+		32A2790823D45D2900C1ACED /* cnn.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790523D45D2900C1ACED /* cnn.h */; };
+		32A2790923D45D2900C1ACED /* cnn.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790523D45D2900C1ACED /* cnn.h */; };
+		32A2790B23D45D3600C1ACED /* enc_enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790A23D45D3600C1ACED /* enc_enums.h */; };
+		32A2790C23D45D3600C1ACED /* enc_enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790A23D45D3600C1ACED /* enc_enums.h */; };
+		32A2790F23D45D4000C1ACED /* encode_strategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790D23D45D4000C1ACED /* encode_strategy.h */; };
+		32A2791023D45D4000C1ACED /* encode_strategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2790D23D45D4000C1ACED /* encode_strategy.h */; };
+		32A2791123D45D4000C1ACED /* encode_strategy.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2790E23D45D4000C1ACED /* encode_strategy.c */; };
+		32A2791223D45D4000C1ACED /* encode_strategy.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2790E23D45D4000C1ACED /* encode_strategy.c */; };
+		32A2791523D45D4C00C1ACED /* gop_structure.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2791323D45D4B00C1ACED /* gop_structure.c */; };
+		32A2791623D45D4C00C1ACED /* gop_structure.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2791323D45D4B00C1ACED /* gop_structure.c */; };
+		32A2791723D45D4C00C1ACED /* gop_structure.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2791423D45D4C00C1ACED /* gop_structure.h */; };
+		32A2791823D45D4C00C1ACED /* gop_structure.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2791423D45D4C00C1ACED /* gop_structure.h */; };
+		32A2791B23D45D5700C1ACED /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2791923D45D5700C1ACED /* level.c */; };
+		32A2791C23D45D5700C1ACED /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2791923D45D5700C1ACED /* level.c */; };
+		32A2791D23D45D5700C1ACED /* level.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2791A23D45D5700C1ACED /* level.h */; };
+		32A2791E23D45D5700C1ACED /* level.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2791A23D45D5700C1ACED /* level.h */; };
+		32A2792023D45D6000C1ACED /* nonrd_pickmode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2791F23D45D6000C1ACED /* nonrd_pickmode.c */; };
+		32A2792123D45D6000C1ACED /* nonrd_pickmode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2791F23D45D6000C1ACED /* nonrd_pickmode.c */; };
+		32A2792323D45D6F00C1ACED /* mode_prune_model_weights.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792223D45D6E00C1ACED /* mode_prune_model_weights.h */; };
+		32A2792423D45D6F00C1ACED /* mode_prune_model_weights.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792223D45D6E00C1ACED /* mode_prune_model_weights.h */; };
+		32A2792623D45D8800C1ACED /* partition_cnn_weights.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792523D45D8800C1ACED /* partition_cnn_weights.h */; };
+		32A2792723D45D8800C1ACED /* partition_cnn_weights.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792523D45D8800C1ACED /* partition_cnn_weights.h */; };
+		32A2792A23D45D9200C1ACED /* partition_strategy.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2792823D45D9200C1ACED /* partition_strategy.c */; };
+		32A2792B23D45D9200C1ACED /* partition_strategy.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2792823D45D9200C1ACED /* partition_strategy.c */; };
+		32A2792C23D45D9200C1ACED /* partition_strategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792923D45D9200C1ACED /* partition_strategy.h */; };
+		32A2792D23D45D9200C1ACED /* partition_strategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792923D45D9200C1ACED /* partition_strategy.h */; };
+		32A2793023D45D9D00C1ACED /* pass2_strategy.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2792E23D45D9D00C1ACED /* pass2_strategy.c */; };
+		32A2793123D45D9D00C1ACED /* pass2_strategy.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2792E23D45D9D00C1ACED /* pass2_strategy.c */; };
+		32A2793223D45D9D00C1ACED /* pass2_strategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792F23D45D9D00C1ACED /* pass2_strategy.h */; };
+		32A2793323D45D9D00C1ACED /* pass2_strategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2792F23D45D9D00C1ACED /* pass2_strategy.h */; };
+		32A2793623D45DBA00C1ACED /* svc_layercontext.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2793423D45DBA00C1ACED /* svc_layercontext.c */; };
+		32A2793723D45DBA00C1ACED /* svc_layercontext.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2793423D45DBA00C1ACED /* svc_layercontext.c */; };
+		32A2793823D45DBA00C1ACED /* svc_layercontext.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2793523D45DBA00C1ACED /* svc_layercontext.h */; };
+		32A2793923D45DBA00C1ACED /* svc_layercontext.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2793523D45DBA00C1ACED /* svc_layercontext.h */; };
+		32A2793C23D45DC600C1ACED /* tpl_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2793A23D45DC600C1ACED /* tpl_model.h */; };
+		32A2793D23D45DC600C1ACED /* tpl_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2793A23D45DC600C1ACED /* tpl_model.h */; };
+		32A2793E23D45DC600C1ACED /* tpl_model.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2793B23D45DC600C1ACED /* tpl_model.c */; };
+		32A2793F23D45DC600C1ACED /* tpl_model.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2793B23D45DC600C1ACED /* tpl_model.c */; };
+		32A2794123D45DCE00C1ACED /* use_flat_gop_model_params.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2794023D45DCE00C1ACED /* use_flat_gop_model_params.h */; };
+		32A2794223D45DCE00C1ACED /* use_flat_gop_model_params.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2794023D45DCE00C1ACED /* use_flat_gop_model_params.h */; };
+		32A2794523D45DE400C1ACED /* var_based_part.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2794323D45DE400C1ACED /* var_based_part.h */; };
+		32A2794623D45DE400C1ACED /* var_based_part.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A2794323D45DE400C1ACED /* var_based_part.h */; };
+		32A2794723D45DE400C1ACED /* var_based_part.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2794423D45DE400C1ACED /* var_based_part.c */; };
+		32A2794823D45DE400C1ACED /* var_based_part.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A2794423D45DE400C1ACED /* var_based_part.c */; };
 		32C2B12C2263716000EA889C /* avg.c in Sources */ = {isa = PBXBuildFile; fileRef = 32C2B12B2263716000EA889C /* avg.c */; };
 		32C2B12D2263716000EA889C /* avg.c in Sources */ = {isa = PBXBuildFile; fileRef = 32C2B12B2263716000EA889C /* avg.c */; };
 		32C2B12F2263717A00EA889C /* recenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C2B12E2263717A00EA889C /* recenter.h */; };
@@ -927,6 +979,32 @@
 		320F74DF225796A90075679E /* daalaboolreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = daalaboolreader.h; sourceTree = "<group>"; };
 		320F74E0225796A90075679E /* postproc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postproc.h; sourceTree = "<group>"; };
 		320F74E1225796A90075679E /* variance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variance.h; sourceTree = "<group>"; };
+		32A278FB23D45C6B00C1ACED /* loopfiltermask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loopfiltermask.c; sourceTree = "<group>"; };
+		32A278FE23D45C7C00C1ACED /* blk_sse_sum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blk_sse_sum.c; sourceTree = "<group>"; };
+		32A2790123D45CAA00C1ACED /* aom_image_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aom_image_internal.h; sourceTree = "<group>"; };
+		32A2790423D45D2900C1ACED /* cnn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cnn.c; sourceTree = "<group>"; };
+		32A2790523D45D2900C1ACED /* cnn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cnn.h; sourceTree = "<group>"; };
+		32A2790A23D45D3600C1ACED /* enc_enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc_enums.h; sourceTree = "<group>"; };
+		32A2790D23D45D4000C1ACED /* encode_strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode_strategy.h; sourceTree = "<group>"; };
+		32A2790E23D45D4000C1ACED /* encode_strategy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encode_strategy.c; sourceTree = "<group>"; };
+		32A2791323D45D4B00C1ACED /* gop_structure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gop_structure.c; sourceTree = "<group>"; };
+		32A2791423D45D4C00C1ACED /* gop_structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gop_structure.h; sourceTree = "<group>"; };
+		32A2791923D45D5700C1ACED /* level.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = level.c; sourceTree = "<group>"; };
+		32A2791A23D45D5700C1ACED /* level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level.h; sourceTree = "<group>"; };
+		32A2791F23D45D6000C1ACED /* nonrd_pickmode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nonrd_pickmode.c; sourceTree = "<group>"; };
+		32A2792223D45D6E00C1ACED /* mode_prune_model_weights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mode_prune_model_weights.h; sourceTree = "<group>"; };
+		32A2792523D45D8800C1ACED /* partition_cnn_weights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partition_cnn_weights.h; sourceTree = "<group>"; };
+		32A2792823D45D9200C1ACED /* partition_strategy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = partition_strategy.c; sourceTree = "<group>"; };
+		32A2792923D45D9200C1ACED /* partition_strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partition_strategy.h; sourceTree = "<group>"; };
+		32A2792E23D45D9D00C1ACED /* pass2_strategy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pass2_strategy.c; sourceTree = "<group>"; };
+		32A2792F23D45D9D00C1ACED /* pass2_strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pass2_strategy.h; sourceTree = "<group>"; };
+		32A2793423D45DBA00C1ACED /* svc_layercontext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = svc_layercontext.c; sourceTree = "<group>"; };
+		32A2793523D45DBA00C1ACED /* svc_layercontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svc_layercontext.h; sourceTree = "<group>"; };
+		32A2793A23D45DC600C1ACED /* tpl_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tpl_model.h; sourceTree = "<group>"; };
+		32A2793B23D45DC600C1ACED /* tpl_model.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tpl_model.c; sourceTree = "<group>"; };
+		32A2794023D45DCE00C1ACED /* use_flat_gop_model_params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = use_flat_gop_model_params.h; sourceTree = "<group>"; };
+		32A2794323D45DE400C1ACED /* var_based_part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = var_based_part.h; sourceTree = "<group>"; };
+		32A2794423D45DE400C1ACED /* var_based_part.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = var_based_part.c; sourceTree = "<group>"; };
 		32C2B12B2263716000EA889C /* avg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = avg.c; sourceTree = "<group>"; };
 		32C2B12E2263717A00EA889C /* recenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recenter.h; sourceTree = "<group>"; };
 		32C2B1312263719500EA889C /* sse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sse.c; sourceTree = "<group>"; };
@@ -1066,6 +1144,29 @@
 		320F71AB225796A90075679E /* encoder */ = {
 			isa = PBXGroup;
 			children = (
+				32A2790423D45D2900C1ACED /* cnn.c */,
+				32A2790523D45D2900C1ACED /* cnn.h */,
+				32A2790A23D45D3600C1ACED /* enc_enums.h */,
+				32A2790E23D45D4000C1ACED /* encode_strategy.c */,
+				32A2790D23D45D4000C1ACED /* encode_strategy.h */,
+				32A2791323D45D4B00C1ACED /* gop_structure.c */,
+				32A2791423D45D4C00C1ACED /* gop_structure.h */,
+				32A2791923D45D5700C1ACED /* level.c */,
+				32A2791A23D45D5700C1ACED /* level.h */,
+				32A2792223D45D6E00C1ACED /* mode_prune_model_weights.h */,
+				32A2791F23D45D6000C1ACED /* nonrd_pickmode.c */,
+				32A2792523D45D8800C1ACED /* partition_cnn_weights.h */,
+				32A2792823D45D9200C1ACED /* partition_strategy.c */,
+				32A2792923D45D9200C1ACED /* partition_strategy.h */,
+				32A2792E23D45D9D00C1ACED /* pass2_strategy.c */,
+				32A2792F23D45D9D00C1ACED /* pass2_strategy.h */,
+				32A2793423D45DBA00C1ACED /* svc_layercontext.c */,
+				32A2793523D45DBA00C1ACED /* svc_layercontext.h */,
+				32A2793B23D45DC600C1ACED /* tpl_model.c */,
+				32A2793A23D45DC600C1ACED /* tpl_model.h */,
+				32A2794023D45DCE00C1ACED /* use_flat_gop_model_params.h */,
+				32A2794423D45DE400C1ACED /* var_based_part.c */,
+				32A2794323D45DE400C1ACED /* var_based_part.h */,
 				320F71AC225796A90075679E /* pustats.h */,
 				320F71AD225796A90075679E /* firstpass.c */,
 				320F71AE225796A90075679E /* wedge_utils.c */,
@@ -1189,6 +1290,7 @@
 		320F723B225796A90075679E /* common */ = {
 			isa = PBXGroup;
 			children = (
+				32A278FB23D45C6B00C1ACED /* loopfiltermask.c */,
 				320F723C225796A90075679E /* cdef_block_sse2.c */,
 				320F723D225796A90075679E /* seg_common.c */,
 				320F723E225796A90075679E /* warped_motion.h */,
@@ -1306,6 +1408,7 @@
 		320F72DA225796A90075679E /* internal */ = {
 			isa = PBXGroup;
 			children = (
+				32A2790123D45CAA00C1ACED /* aom_image_internal.h */,
 				320F72DB225796A90075679E /* aom_codec_internal.h */,
 			);
 			path = internal;
@@ -1363,6 +1466,7 @@
 		320F7412225796A90075679E /* aom_dsp */ = {
 			isa = PBXGroup;
 			children = (
+				32A278FE23D45C7C00C1ACED /* blk_sse_sum.c */,
 				32C2B12B2263716000EA889C /* avg.c */,
 				320F7413225796A90075679E /* blend.h */,
 				320F7414225796A90075679E /* bitreader_buffer.h */,
@@ -1506,6 +1610,7 @@
 				320F77F4225796AA0075679E /* daalaboolwriter.h in Headers */,
 				320F76A9225796AA0075679E /* cdef.h in Headers */,
 				320F76B6225796AA0075679E /* av1_iface_common.h in Headers */,
+				32A2793823D45DBA00C1ACED /* svc_layercontext.h in Headers */,
 				32C2B1472263725700EA889C /* partition_model_weights.h in Headers */,
 				320F78A8225796AA0075679E /* postproc.h in Headers */,
 				320F75F7225796A90075679E /* encodemb.h in Headers */,
@@ -1523,6 +1628,7 @@
 				320F75D9225796A90075679E /* rd.h in Headers */,
 				320F7891225796AA0075679E /* aom_dsp_common.h in Headers */,
 				320F7633225796AA0075679E /* cfl.h in Headers */,
+				32A2792C23D45D9200C1ACED /* partition_strategy.h in Headers */,
 				320F779E225796AA0075679E /* aom_mem.h in Headers */,
 				320F77E8225796AA0075679E /* binary_codes_writer.h in Headers */,
 				320F76C3225796AA0075679E /* aom_encoder.h in Headers */,
@@ -1567,6 +1673,7 @@
 				320F75B8225796A90075679E /* aq_variance.h in Headers */,
 				320F78A6225796AA0075679E /* bitreader.h in Headers */,
 				320F77D2225796AA0075679E /* system_state.h in Headers */,
+				32A2791D23D45D5700C1ACED /* level.h in Headers */,
 				320F77D3225796AA0075679E /* sanitizer.h in Headers */,
 				32E743FB22579BBA0008FC73 /* av1_rtcd.h in Headers */,
 				320F7836225796AA0075679E /* intrapred_common.h in Headers */,
@@ -1584,6 +1691,7 @@
 				320F76CB225796AA0075679E /* aom_decoder.h in Headers */,
 				32C2B14A2263726400EA889C /* rate_distortion_model_params.h in Headers */,
 				320F75FF225796A90075679E /* block.h in Headers */,
+				32A2791723D45D4C00C1ACED /* gop_structure.h in Headers */,
 				320F7618225796A90075679E /* global_motion.h in Headers */,
 				320F75DB225796A90075679E /* palette.h in Headers */,
 				320F76B5225796AA0075679E /* av1_txfm.h in Headers */,
@@ -1595,6 +1703,8 @@
 				320F7659225796AA0075679E /* resize.h in Headers */,
 				320F77CE225796AA0075679E /* mem_ops_aligned.h in Headers */,
 				320F75DD225796A90075679E /* av1_quantize.h in Headers */,
+				32A2790B23D45D3600C1ACED /* enc_enums.h in Headers */,
+				32A2790823D45D2900C1ACED /* cnn.h in Headers */,
 				320F75AB225796A90075679E /* encodemv.h in Headers */,
 				320F764E225796AA0075679E /* av1_inv_txfm1d_cfg.h in Headers */,
 				320F764F225796AA0075679E /* restoration.h in Headers */,
@@ -1613,6 +1723,7 @@
 				320F761D225796A90075679E /* decodetxb.h in Headers */,
 				320F74EE225796A90075679E /* aom_scale.h in Headers */,
 				32C2B136226371DE00EA889C /* obmc.h in Headers */,
+				32A2793C23D45DC600C1ACED /* tpl_model.h in Headers */,
 				320F75B0225796A90075679E /* corner_detect.h in Headers */,
 				320F76CA225796AA0075679E /* aom_codec.h in Headers */,
 				320F7616225796A90075679E /* ml.h in Headers */,
@@ -1622,9 +1733,12 @@
 				320F7630225796AA0075679E /* warped_motion.h in Headers */,
 				320F77E3225796AA0075679E /* quantize.h in Headers */,
 				320F75A5225796A90075679E /* pustats.h in Headers */,
+				32A2793223D45D9D00C1ACED /* pass2_strategy.h in Headers */,
 				32C2B12F2263717A00EA889C /* recenter.h in Headers */,
 				320F77F3225796AA0075679E /* entdec.h in Headers */,
 				320F77CF225796AA0075679E /* mem_ops.h in Headers */,
+				32A2794123D45DCE00C1ACED /* use_flat_gop_model_params.h in Headers */,
+				32A2792323D45D6F00C1ACED /* mode_prune_model_weights.h in Headers */,
 				320F765D225796AA0075679E /* common.h in Headers */,
 				320F77D1225796AA0075679E /* aom_once.h in Headers */,
 				32E7440222579BBA0008FC73 /* aom_scale_rtcd.h in Headers */,
@@ -1636,6 +1750,9 @@
 				320F77F2225796AA0075679E /* entcode.h in Headers */,
 				320F75C6225796A90075679E /* ratectrl.h in Headers */,
 				320F762B225796AA0075679E /* accounting.h in Headers */,
+				32A2790F23D45D4000C1ACED /* encode_strategy.h in Headers */,
+				32A2790223D45CAA00C1ACED /* aom_image_internal.h in Headers */,
+				32A2792623D45D8800C1ACED /* partition_cnn_weights.h in Headers */,
 				320F77F1225796AA0075679E /* aom_simd.h in Headers */,
 				320F77ED225796AA0075679E /* aom_filter.h in Headers */,
 				320F76AE225796AA0075679E /* token_cdfs.h in Headers */,
@@ -1666,6 +1783,7 @@
 				320F77DE225796AA0075679E /* aom_timer.h in Headers */,
 				320F7603225796A90075679E /* ransac.h in Headers */,
 				320F780A225796AA0075679E /* aom_simd_inline.h in Headers */,
+				32A2794523D45DE400C1ACED /* var_based_part.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1678,6 +1796,7 @@
 				32E749422257A6280008FC73 /* aom_decoder.h in Headers */,
 				32E748352257A5CF0008FC73 /* mathutils.h in Headers */,
 				32E748152257A5CF0008FC73 /* av1_quantize.h in Headers */,
+				32A2793923D45DBA00C1ACED /* svc_layercontext.h in Headers */,
 				32C2B1482263725700EA889C /* partition_model_weights.h in Headers */,
 				32E748562257A5CF0008FC73 /* pred_common.h in Headers */,
 				32E748E22257A5EC0008FC73 /* mem_ops_aligned.h in Headers */,
@@ -1695,6 +1814,7 @@
 				32E7492A2257A6020008FC73 /* aom_dsp_common.h in Headers */,
 				32E748C72257A5CF0008FC73 /* cdef.h in Headers */,
 				32E748E62257A5EC0008FC73 /* system_state.h in Headers */,
+				32A2792D23D45D9200C1ACED /* partition_strategy.h in Headers */,
 				32E748D42257A5CF0008FC73 /* av1_iface_common.h in Headers */,
 				32E748772257A5CF0008FC73 /* resize.h in Headers */,
 				32E748FC2257A6020008FC73 /* noise_model.h in Headers */,
@@ -1739,6 +1859,7 @@
 				32E7493C2257A6280008FC73 /* aom_encoder.h in Headers */,
 				32E748F82257A6020008FC73 /* entenc.h in Headers */,
 				32E748F92257A6020008FC73 /* binary_codes_writer.h in Headers */,
+				32A2791E23D45D5700C1ACED /* level.h in Headers */,
 				32E749182257A6020008FC73 /* binary_codes_reader.h in Headers */,
 				32E7485F2257A5CF0008FC73 /* idct.h in Headers */,
 				32E748132257A5CF0008FC73 /* palette.h in Headers */,
@@ -1756,6 +1877,7 @@
 				32E748642257A5CF0008FC73 /* cdef_block_simd.h in Headers */,
 				32E747FD2257A5CF0008FC73 /* cost.h in Headers */,
 				32C2B14B2263726400EA889C /* rate_distortion_model_params.h in Headers */,
+				32A2791823D45D4C00C1ACED /* gop_structure.h in Headers */,
 				32E747F92257A5CF0008FC73 /* pickrst.h in Headers */,
 				32E747E02257A5CF0008FC73 /* pustats.h in Headers */,
 				32E748402257A5CF0008FC73 /* decoder.h in Headers */,
@@ -1767,6 +1889,8 @@
 				32E749312257A6020008FC73 /* fft_common.h in Headers */,
 				32E748162257A5CF0008FC73 /* firstpass.h in Headers */,
 				32E748612257A5CF0008FC73 /* timing.h in Headers */,
+				32A2790C23D45D3600C1ACED /* enc_enums.h in Headers */,
+				32A2790923D45D2900C1ACED /* cnn.h in Headers */,
 				32E749212257A6020008FC73 /* intrapred_common.h in Headers */,
 				32E748092257A5CF0008FC73 /* aq_cyclicrefresh.h in Headers */,
 				32E747F32257A5CF0008FC73 /* aq_variance.h in Headers */,
@@ -1785,6 +1909,7 @@
 				32E748192257A5CF0008FC73 /* encodemb.h in Headers */,
 				32E7493D2257A6280008FC73 /* aom_integer.h in Headers */,
 				32C2B137226371DE00EA889C /* obmc.h in Headers */,
+				32A2793D23D45DC600C1ACED /* tpl_model.h in Headers */,
 				32E7492E2257A6020008FC73 /* grain_synthesis.h in Headers */,
 				32E749402257A6280008FC73 /* aom_image.h in Headers */,
 				32E748332257A5CF0008FC73 /* hash.h in Headers */,
@@ -1794,9 +1919,12 @@
 				32E747D62257A5AA0008FC73 /* aom_version.h in Headers */,
 				32E748D32257A5CF0008FC73 /* av1_txfm.h in Headers */,
 				32E748262257A5CF0008FC73 /* ethread.h in Headers */,
+				32A2793323D45D9D00C1ACED /* pass2_strategy.h in Headers */,
 				32E747DA2257A5B20008FC73 /* vector.h in Headers */,
 				32C2B1302263717A00EA889C /* recenter.h in Headers */,
 				32E749232257A6020008FC73 /* txfm_common.h in Headers */,
+				32A2794223D45DCE00C1ACED /* use_flat_gop_model_params.h in Headers */,
+				32A2792423D45D6F00C1ACED /* mode_prune_model_weights.h in Headers */,
 				32E748D62257A5E10008FC73 /* aom_thread.h in Headers */,
 				32E7487D2257A5CF0008FC73 /* seg_common.h in Headers */,
 				32E748652257A5CF0008FC73 /* av1_inv_txfm1d.h in Headers */,
@@ -1808,6 +1936,9 @@
 				32E748D92257A5E10008FC73 /* endian_inl.h in Headers */,
 				32E747D72257A5AA0008FC73 /* aom_scale_rtcd.h in Headers */,
 				32E747FA2257A5CF0008FC73 /* speed_features.h in Headers */,
+				32A2791023D45D4000C1ACED /* encode_strategy.h in Headers */,
+				32A2790323D45CAA00C1ACED /* aom_image_internal.h in Headers */,
+				32A2792723D45D8800C1ACED /* partition_cnn_weights.h in Headers */,
 				32E7487B2257A5CF0008FC73 /* common.h in Headers */,
 				32E747F22257A5CF0008FC73 /* encodeframe.h in Headers */,
 				32E748232257A5CF0008FC73 /* hybrid_fwd_txfm.h in Headers */,
@@ -1838,6 +1969,7 @@
 				32E748D52257A5E10008FC73 /* debug_util.h in Headers */,
 				32E748172257A5CF0008FC73 /* encoder.h in Headers */,
 				32E7486F2257A5CF0008FC73 /* mvref_common.h in Headers */,
+				32A2794623D45DE400C1ACED /* var_based_part.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1968,6 +2100,7 @@
 				320F75B5225796A90075679E /* dwt.c in Sources */,
 				320F75D7225796A90075679E /* encodemv.c in Sources */,
 				320F764B225796AA0075679E /* cdef_block_neon.c in Sources */,
+				32A2791523D45D4C00C1ACED /* gop_structure.c in Sources */,
 				320F782E225796AA0075679E /* sum_squares.c in Sources */,
 				320F7632225796AA0075679E /* alloccommon.c in Sources */,
 				320F7893225796AA0075679E /* entcode.c in Sources */,
@@ -1975,6 +2108,7 @@
 				320F77F0225796AA0075679E /* grain_synthesis.c in Sources */,
 				320F76BC225796AA0075679E /* debug_util.c in Sources */,
 				320F763A225796AA0075679E /* debugmodes.c in Sources */,
+				32A2790623D45D2900C1ACED /* cnn.c in Sources */,
 				320F75CB225796A90075679E /* temporal_filter.c in Sources */,
 				32E747B72257A3680008FC73 /* fast_9.c in Sources */,
 				320F75AE225796A90075679E /* rd.c in Sources */,
@@ -1990,9 +2124,12 @@
 				320F7634225796AA0075679E /* resize.c in Sources */,
 				320F7623225796A90075679E /* accounting.c in Sources */,
 				320F75CD225796A90075679E /* av1_fwd_txfm2d.c in Sources */,
+				32A2794723D45DE400C1ACED /* var_based_part.c in Sources */,
 				320F765B225796AA0075679E /* scale.c in Sources */,
+				32A2793623D45DBA00C1ACED /* svc_layercontext.c in Sources */,
 				320F75C0225796A90075679E /* context_tree.c in Sources */,
 				32C2B1322263719500EA889C /* sse.c in Sources */,
+				32A2792023D45D6000C1ACED /* nonrd_pickmode.c in Sources */,
 				320F75B3225796A90075679E /* ethread.c in Sources */,
 				320F76D1225796AA0075679E /* aom_integer.c in Sources */,
 				320F764A225796AA0075679E /* entropymode.c in Sources */,
@@ -2002,6 +2139,7 @@
 				320F762A225796AA0075679E /* decodetxb.c in Sources */,
 				320F74F3225796A90075679E /* yv12config.c in Sources */,
 				320F75FA225796A90075679E /* picklpf.c in Sources */,
+				32A2791123D45D4000C1ACED /* encode_strategy.c in Sources */,
 				320F76CD225796AA0075679E /* aom_image.c in Sources */,
 				320F77E5225796AA0075679E /* subtract.c in Sources */,
 				320F7805225796AA0075679E /* daalaboolreader.c in Sources */,
@@ -2030,6 +2168,8 @@
 				320F75BA225796A90075679E /* blockiness.c in Sources */,
 				320F765C225796AA0075679E /* cdef_block_sse4.c in Sources */,
 				320F7644225796AA0075679E /* av1_loopfilter.c in Sources */,
+				32A278FF23D45C7C00C1ACED /* blk_sse_sum.c in Sources */,
+				32A2792A23D45D9200C1ACED /* partition_strategy.c in Sources */,
 				320F74F4225796A90075679E /* aom_scale.c in Sources */,
 				320F75CA225796A90075679E /* ml.c in Sources */,
 				320F768F225796AA0075679E /* pred_common.c in Sources */,
@@ -2067,6 +2207,7 @@
 				320F76D0225796AA0075679E /* aom_encoder.c in Sources */,
 				320F7654225796AA0075679E /* cdef_block_avx2.c in Sources */,
 				320F7649225796AA0075679E /* scan.c in Sources */,
+				32A278FC23D45C6B00C1ACED /* loopfiltermask.c in Sources */,
 				320F75A8225796A90075679E /* av1_quantize.c in Sources */,
 				320F75B9225796A90075679E /* encodemb.c in Sources */,
 				320F75A6225796A90075679E /* firstpass.c in Sources */,
@@ -2083,12 +2224,15 @@
 				320F7627225796AA0075679E /* detokenize.c in Sources */,
 				320F7661225796AA0075679E /* frame_buffers.c in Sources */,
 				320F75C4225796A90075679E /* pickcdef.c in Sources */,
+				32A2793023D45D9D00C1ACED /* pass2_strategy.c in Sources */,
 				320F7626225796AA0075679E /* decodeframe.c in Sources */,
 				320F75D8225796A90075679E /* av1_fwd_txfm1d.c in Sources */,
+				32A2793E23D45DC600C1ACED /* tpl_model.c in Sources */,
 				320F7639225796AA0075679E /* quant_common.c in Sources */,
 				320F7694225796AA0075679E /* av1_inv_txfm1d.c in Sources */,
 				320F7806225796AA0075679E /* blend_a64_hmask.c in Sources */,
 				320F76CE225796AA0075679E /* aom_codec.c in Sources */,
+				32A2791B23D45D5700C1ACED /* level.c in Sources */,
 				320F77E6225796AA0075679E /* binary_codes_reader.c in Sources */,
 				320F7605225796A90075679E /* ratectrl.c in Sources */,
 				320F75D0225796A90075679E /* lookahead.c in Sources */,
@@ -2118,6 +2262,7 @@
 				32E747DC2257A5B20008FC73 /* nonmax.c in Sources */,
 				32E748492257A5CF0008FC73 /* decoder.c in Sources */,
 				32E748442257A5CF0008FC73 /* accounting.c in Sources */,
+				32A2791623D45D4C00C1ACED /* gop_structure.c in Sources */,
 				32E7486A2257A5CF0008FC73 /* av1_txfm.c in Sources */,
 				32E7487F2257A5CF0008FC73 /* frame_buffers.c in Sources */,
 				32E747ED2257A5CF0008FC73 /* rdopt.c in Sources */,
@@ -2125,6 +2270,7 @@
 				32E747F42257A5CF0008FC73 /* encodemb.c in Sources */,
 				32E748DC2257A5E70008FC73 /* aom_scale_rtcd.c in Sources */,
 				32E749482257A6280008FC73 /* aom_integer.c in Sources */,
+				32A2790723D45D2900C1ACED /* cnn.c in Sources */,
 				32E748592257A5CF0008FC73 /* quant_common.c in Sources */,
 				32E748472257A5CF0008FC73 /* decodeframe.c in Sources */,
 				32E748282257A5CF0008FC73 /* tokenize.c in Sources */,
@@ -2140,9 +2286,12 @@
 				32E748552257A5CF0008FC73 /* reconintra.c in Sources */,
 				32E748CB2257A5CF0008FC73 /* blockd.c in Sources */,
 				32E747E22257A5CF0008FC73 /* wedge_utils.c in Sources */,
+				32A2794823D45DE400C1ACED /* var_based_part.c in Sources */,
 				32E7484B2257A5CF0008FC73 /* decodetxb.c in Sources */,
+				32A2793723D45DBA00C1ACED /* svc_layercontext.c in Sources */,
 				32E748522257A5CF0008FC73 /* alloccommon.c in Sources */,
 				32E748CF2257A5CF0008FC73 /* restoration.c in Sources */,
+				32A2792123D45D6000C1ACED /* nonrd_pickmode.c in Sources */,
 				32C2B1332263719500EA889C /* sse.c in Sources */,
 				32E748122257A5CF0008FC73 /* encodetxb.c in Sources */,
 				32E7491F2257A6020008FC73 /* psnrhvs.c in Sources */,
@@ -2152,6 +2301,7 @@
 				32E748DD2257A5E70008FC73 /* yv12extend.c in Sources */,
 				32E747FE2257A5CF0008FC73 /* extend.c in Sources */,
 				32E748F32257A6020008FC73 /* blend_a64_vmask.c in Sources */,
+				32A2791223D45D4000C1ACED /* encode_strategy.c in Sources */,
 				32E749172257A6020008FC73 /* aom_convolve.c in Sources */,
 				32E748F42257A6020008FC73 /* noise_util.c in Sources */,
 				32E748DE2257A5E70008FC73 /* yv12config.c in Sources */,
@@ -2180,6 +2330,8 @@
 				32E749202257A6020008FC73 /* noise_model.c in Sources */,
 				32E748722257A5CF0008FC73 /* cdef_block_avx2.c in Sources */,
 				32E747FC2257A5CF0008FC73 /* mcomp.c in Sources */,
+				32A2790023D45C7C00C1ACED /* blk_sse_sum.c in Sources */,
+				32A2792B23D45D9200C1ACED /* partition_strategy.c in Sources */,
 				32E749222257A6020008FC73 /* bitwriter_buffer.c in Sources */,
 				32E749252257A6020008FC73 /* binary_codes_writer.c in Sources */,
 				32E7491A2257A6020008FC73 /* sum_squares.c in Sources */,
@@ -2217,6 +2369,7 @@
 				32E747DD2257A5B20008FC73 /* fast_9.c in Sources */,
 				32E748752257A5CF0008FC73 /* cfl.c in Sources */,
 				32E747FB2257A5CF0008FC73 /* context_tree.c in Sources */,
+				32A278FD23D45C6B00C1ACED /* loopfiltermask.c in Sources */,
 				32E748662257A5CF0008FC73 /* thread_common.c in Sources */,
 				32E749472257A6280008FC73 /* aom_encoder.c in Sources */,
 				32E748802257A5CF0008FC73 /* reconinter.c in Sources */,
@@ -2233,12 +2386,15 @@
 				32E749132257A6020008FC73 /* sad_av1.c in Sources */,
 				32E748482257A5CF0008FC73 /* detokenize.c in Sources */,
 				32E747E82257A5CF0008FC73 /* palette.c in Sources */,
+				32A2793123D45D9D00C1ACED /* pass2_strategy.c in Sources */,
 				32E748FE2257A6020008FC73 /* loopfilter.c in Sources */,
 				32E748732257A5CF0008FC73 /* cdef.c in Sources */,
+				32A2793F23D45DC600C1ACED /* tpl_model.c in Sources */,
 				32E748AC2257A5CF0008FC73 /* av1_rtcd.c in Sources */,
 				32E7481A2257A5CF0008FC73 /* aq_variance.c in Sources */,
 				32E748542257A5CF0008FC73 /* resize.c in Sources */,
 				32E7482C2257A5CF0008FC73 /* cost.c in Sources */,
+				32A2791C23D45D5700C1ACED /* level.c in Sources */,
 				32E747E12257A5CF0008FC73 /* firstpass.c in Sources */,
 				32E749452257A6280008FC73 /* aom_codec.c in Sources */,
 				32E7480E2257A5CF0008FC73 /* mbgraph.c in Sources */,
