@@ -22,10 +22,16 @@
 extern "C" {
 #endif
 
+unsigned int aom_avg_4x4_c(const uint8_t *, int p);
+#define aom_avg_4x4 aom_avg_4x4_c
+
+unsigned int aom_avg_8x8_c(const uint8_t *, int p);
+#define aom_avg_8x8 aom_avg_8x8_c
+
 void aom_blend_a64_hmask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, int w, int h);
 #define aom_blend_a64_hmask aom_blend_a64_hmask_c
 
-void aom_blend_a64_mask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subx, int suby);
+void aom_blend_a64_mask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subw, int subh);
 #define aom_blend_a64_mask aom_blend_a64_mask_c
 
 void aom_blend_a64_vmask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, int w, int h);
@@ -56,7 +62,7 @@ void aom_convolve8_horiz_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *ds
 void aom_convolve8_vert_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h);
 #define aom_convolve8_vert aom_convolve8_vert_c
 
-void aom_convolve_copy_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h);
+void aom_convolve_copy_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int filter_x_stride, const int16_t *filter_y, int filter_y_stride, int w, int h);
 #define aom_convolve_copy aom_convolve_copy_c
 
 void aom_dc_128_predictor_16x16_c(uint8_t *dst, ptrdiff_t y_stride, const uint8_t *above, const uint8_t *left);
@@ -466,6 +472,9 @@ unsigned int aom_get4x4sse_cs_c(const unsigned char *src_ptr, int source_stride,
 
 void aom_get8x8var_c(const uint8_t *src_ptr, int source_stride, const uint8_t *ref_ptr, int ref_stride, unsigned int *sse, int *sum);
 #define aom_get8x8var aom_get8x8var_c
+
+void aom_get_blk_sse_sum_c(const int16_t *data, int stride, int bw, int bh, int *x_sum, int64_t *x2_sum);
+#define aom_get_blk_sse_sum aom_get_blk_sse_sum_c
 
 unsigned int aom_get_mb_ss_c(const int16_t *);
 #define aom_get_mb_ss aom_get_mb_ss_c
@@ -1874,13 +1883,19 @@ unsigned int aom_highbd_8_variance8x4_c(const uint8_t *src_ptr, int source_strid
 unsigned int aom_highbd_8_variance8x8_c(const uint8_t *src_ptr, int source_stride, const uint8_t *ref_ptr, int ref_stride, unsigned int *sse);
 #define aom_highbd_8_variance8x8 aom_highbd_8_variance8x8_c
 
-void aom_highbd_blend_a64_d16_mask_c(uint8_t *dst, uint32_t dst_stride, const CONV_BUF_TYPE *src0, uint32_t src0_stride, const CONV_BUF_TYPE *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subx, int suby, ConvolveParams *conv_params, const int bd);
+unsigned int aom_highbd_avg_4x4_c(const uint8_t *, int p);
+#define aom_highbd_avg_4x4 aom_highbd_avg_4x4_c
+
+unsigned int aom_highbd_avg_8x8_c(const uint8_t *, int p);
+#define aom_highbd_avg_8x8 aom_highbd_avg_8x8_c
+
+void aom_highbd_blend_a64_d16_mask_c(uint8_t *dst, uint32_t dst_stride, const CONV_BUF_TYPE *src0, uint32_t src0_stride, const CONV_BUF_TYPE *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subw, int subh, ConvolveParams *conv_params, const int bd);
 #define aom_highbd_blend_a64_d16_mask aom_highbd_blend_a64_d16_mask_c
 
 void aom_highbd_blend_a64_hmask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, int w, int h, int bd);
 #define aom_highbd_blend_a64_hmask aom_highbd_blend_a64_hmask_c
 
-void aom_highbd_blend_a64_mask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subx, int suby, int bd);
+void aom_highbd_blend_a64_mask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subw, int subh, int bd);
 #define aom_highbd_blend_a64_mask aom_highbd_blend_a64_mask_c
 
 void aom_highbd_blend_a64_vmask_c(uint8_t *dst, uint32_t dst_stride, const uint8_t *src0, uint32_t src0_stride, const uint8_t *src1, uint32_t src1_stride, const uint8_t *mask, int w, int h, int bd);
@@ -1890,20 +1905,20 @@ void aom_highbd_comp_avg_pred_c(uint8_t *comp_pred8, const uint8_t *pred8, int w
 #define aom_highbd_comp_avg_pred aom_highbd_comp_avg_pred_c
 
 void aom_highbd_comp_avg_upsampled_pred_c(MACROBLOCKD *xd, const struct AV1Common *const cm, int mi_row, int mi_col,
-                                                          const MV *const mv, uint8_t *comp_pred8, const uint8_t *pred8, int width,
-                                                          int height, int subpel_x_q3, int subpel_y_q3, const uint8_t *ref8, int ref_stride, int bd, int subpel_search);
+                                                            const MV *const mv, uint8_t *comp_pred8, const uint8_t *pred8, int width,
+                                                            int height, int subpel_x_q3, int subpel_y_q3, const uint8_t *ref8, int ref_stride, int bd, int subpel_search);
 #define aom_highbd_comp_avg_upsampled_pred aom_highbd_comp_avg_upsampled_pred_c
 
 void aom_highbd_comp_mask_pred_c(uint8_t *comp_pred, const uint8_t *pred8, int width, int height, const uint8_t *ref8, int ref_stride, const uint8_t *mask, int mask_stride, int invert_mask);
 #define aom_highbd_comp_mask_pred aom_highbd_comp_mask_pred_c
 
-void aom_highbd_convolve8_horiz_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h, int bps);
+void aom_highbd_convolve8_horiz_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h, int bd);
 #define aom_highbd_convolve8_horiz aom_highbd_convolve8_horiz_c
 
-void aom_highbd_convolve8_vert_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h, int bps);
+void aom_highbd_convolve8_vert_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h, int bd);
 #define aom_highbd_convolve8_vert aom_highbd_convolve8_vert_c
 
-void aom_highbd_convolve_copy_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int x_step_q4, const int16_t *filter_y, int y_step_q4, int w, int h, int bps);
+void aom_highbd_convolve_copy_c(const uint8_t *src, ptrdiff_t src_stride, uint8_t *dst, ptrdiff_t dst_stride, const int16_t *filter_x, int filter_x_stride, const int16_t *filter_y, int filter_y_stride, int w, int h, int bd);
 #define aom_highbd_convolve_copy aom_highbd_convolve_copy_c
 
 void aom_highbd_dc_128_predictor_16x16_c(uint16_t *dst, ptrdiff_t y_stride, const uint16_t *above, const uint16_t *left, int bd);
@@ -2150,9 +2165,9 @@ void aom_highbd_dist_wtd_comp_avg_pred_c(uint8_t *comp_pred8, const uint8_t *pre
 #define aom_highbd_dist_wtd_comp_avg_pred aom_highbd_dist_wtd_comp_avg_pred_c
 
 void aom_highbd_dist_wtd_comp_avg_upsampled_pred_c(MACROBLOCKD *xd, const struct AV1Common *const cm, int mi_row, int mi_col,
-                                                              const MV *const mv, uint8_t *comp_pred8, const uint8_t *pred8, int width,
-                                                              int height, int subpel_x_q3, int subpel_y_q3, const uint8_t *ref8,
-                                                              int ref_stride, int bd, const DIST_WTD_COMP_PARAMS *jcp_param, int subpel_search);
+                                                                const MV *const mv, uint8_t *comp_pred8, const uint8_t *pred8, int width,
+                                                                int height, int subpel_x_q3, int subpel_y_q3, const uint8_t *ref8,
+                                                                int ref_stride, int bd, const DIST_WTD_COMP_PARAMS *jcp_param, int subpel_search);
 #define aom_highbd_dist_wtd_comp_avg_upsampled_pred aom_highbd_dist_wtd_comp_avg_upsampled_pred_c
 
 unsigned int aom_highbd_dist_wtd_sad128x128_avg_c(const uint8_t *src_ptr, int src_stride, const uint8_t *ref_ptr, int ref_stride, const uint8_t *second_pred, const DIST_WTD_COMP_PARAMS* jcp_param);
@@ -2284,10 +2299,19 @@ void aom_highbd_h_predictor_8x4_c(uint16_t *dst, ptrdiff_t y_stride, const uint1
 void aom_highbd_h_predictor_8x8_c(uint16_t *dst, ptrdiff_t y_stride, const uint16_t *above, const uint16_t *left, int bd);
 #define aom_highbd_h_predictor_8x8 aom_highbd_h_predictor_8x8_c
 
+void aom_highbd_hadamard_16x16_c(const int16_t *src_diff, ptrdiff_t src_stride, tran_low_t *coeff);
+#define aom_highbd_hadamard_16x16 aom_highbd_hadamard_16x16_c
+
+void aom_highbd_hadamard_32x32_c(const int16_t *src_diff, ptrdiff_t src_stride, tran_low_t *coeff);
+#define aom_highbd_hadamard_32x32 aom_highbd_hadamard_32x32_c
+
+void aom_highbd_hadamard_8x8_c(const int16_t *src_diff, ptrdiff_t src_stride, tran_low_t *coeff);
+#define aom_highbd_hadamard_8x8 aom_highbd_hadamard_8x8_c
+
 void aom_highbd_lpf_horizontal_14_c(uint16_t *s, int pitch, const uint8_t *blimit, const uint8_t *limit, const uint8_t *thresh, int bd);
 #define aom_highbd_lpf_horizontal_14 aom_highbd_lpf_horizontal_14_c
 
-void aom_highbd_lpf_horizontal_14_dual_c(uint16_t *s, int pitch, const uint8_t *blimit0, const uint8_t *limit0, const uint8_t *thresh0, const uint8_t *blimit1, const uint8_t *limt1, const uint8_t *thresh1,int bd);
+void aom_highbd_lpf_horizontal_14_dual_c(uint16_t *s, int pitch, const uint8_t *blimit0, const uint8_t *limit0, const uint8_t *thresh0, const uint8_t *blimit1, const uint8_t *limit1, const uint8_t *thresh1,int bd);
 #define aom_highbd_lpf_horizontal_14_dual aom_highbd_lpf_horizontal_14_dual_c
 
 void aom_highbd_lpf_horizontal_4_c(uint16_t *s, int pitch, const uint8_t *blimit, const uint8_t *limit, const uint8_t *thresh, int bd);
@@ -2397,6 +2421,9 @@ unsigned int aom_highbd_masked_sad8x4_c(const uint8_t *src8, int src_stride, con
 
 unsigned int aom_highbd_masked_sad8x8_c(const uint8_t *src8, int src_stride, const uint8_t *ref8, int ref_stride, const uint8_t *second_pred8, const uint8_t *msk, int msk_stride, int invert_mask);
 #define aom_highbd_masked_sad8x8 aom_highbd_masked_sad8x8_c
+
+void aom_highbd_minmax_8x8_c(const uint8_t *s, int p, const uint8_t *d, int dp, int *min, int *max);
+#define aom_highbd_minmax_8x8 aom_highbd_minmax_8x8_c
 
 unsigned int aom_highbd_obmc_sad128x128_c(const uint8_t *pre, int pre_stride, const int32_t *wsrc, const int32_t *mask);
 #define aom_highbd_obmc_sad128x128 aom_highbd_obmc_sad128x128_c
@@ -2662,8 +2689,17 @@ void aom_highbd_quantize_b_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, con
 void aom_highbd_quantize_b_32x32_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
 #define aom_highbd_quantize_b_32x32 aom_highbd_quantize_b_32x32_c
 
+void aom_highbd_quantize_b_32x32_adaptive_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
+#define aom_highbd_quantize_b_32x32_adaptive aom_highbd_quantize_b_32x32_adaptive_c
+
 void aom_highbd_quantize_b_64x64_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
 #define aom_highbd_quantize_b_64x64 aom_highbd_quantize_b_64x64_c
+
+void aom_highbd_quantize_b_64x64_adaptive_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
+#define aom_highbd_quantize_b_64x64_adaptive aom_highbd_quantize_b_64x64_adaptive_c
+
+void aom_highbd_quantize_b_adaptive_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
+#define aom_highbd_quantize_b_adaptive aom_highbd_quantize_b_adaptive_c
 
 unsigned int aom_highbd_sad128x128_c(const uint8_t *src_ptr, int src_stride, const uint8_t *ref_ptr, int ref_stride);
 #define aom_highbd_sad128x128 aom_highbd_sad128x128_c
@@ -3050,8 +3086,8 @@ void aom_highbd_subtract_block_c(int rows, int cols, int16_t *diff_ptr, ptrdiff_
 #define aom_highbd_subtract_block aom_highbd_subtract_block_c
 
 void aom_highbd_upsampled_pred_c(MACROBLOCKD *xd, const struct AV1Common *const cm, int mi_row, int mi_col,
-                                                 const MV *const mv, uint8_t *comp_pred8, int width, int height, int subpel_x_q3,
-                                                 int subpel_y_q3, const uint8_t *ref8, int ref_stride, int bd, int subpel_search);
+                                                   const MV *const mv, uint8_t *comp_pred8, int width, int height, int subpel_x_q3,
+                                                   int subpel_y_q3, const uint8_t *ref8, int ref_stride, int bd, int subpel_search);
 #define aom_highbd_upsampled_pred aom_highbd_upsampled_pred_c
 
 void aom_highbd_v_predictor_16x16_c(uint16_t *dst, ptrdiff_t y_stride, const uint16_t *above, const uint16_t *left, int bd);
@@ -3129,7 +3165,13 @@ void aom_ifft4x4_float_c(const float *input, float *temp, float *output);
 void aom_ifft8x8_float_c(const float *input, float *temp, float *output);
 #define aom_ifft8x8_float aom_ifft8x8_float_c
 
-void aom_lowbd_blend_a64_d16_mask_c(uint8_t *dst, uint32_t dst_stride, const CONV_BUF_TYPE *src0, uint32_t src0_stride, const CONV_BUF_TYPE *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subx, int suby, ConvolveParams *conv_params);
+int16_t aom_int_pro_col_c(const uint8_t *ref, const int width);
+#define aom_int_pro_col aom_int_pro_col_c
+
+void aom_int_pro_row_c(int16_t *hbuf, const uint8_t *ref, const int ref_stride, const int height);
+#define aom_int_pro_row aom_int_pro_row_c
+
+void aom_lowbd_blend_a64_d16_mask_c(uint8_t *dst, uint32_t dst_stride, const CONV_BUF_TYPE *src0, uint32_t src0_stride, const CONV_BUF_TYPE *src1, uint32_t src1_stride, const uint8_t *mask, uint32_t mask_stride, int w, int h, int subw, int subh, ConvolveParams *conv_params);
 #define aom_lowbd_blend_a64_d16_mask aom_lowbd_blend_a64_d16_mask_c
 
 void aom_lpf_horizontal_14_c(uint8_t *s, int pitch, const uint8_t *blimit, const uint8_t *limit, const uint8_t *thresh);
@@ -3311,6 +3353,9 @@ unsigned int aom_masked_sub_pixel_variance8x4_c(const uint8_t *src, int src_stri
 
 unsigned int aom_masked_sub_pixel_variance8x8_c(const uint8_t *src, int src_stride, int xoffset, int yoffset, const uint8_t *ref, int ref_stride, const uint8_t *second_pred, const uint8_t *msk, int msk_stride, int invert_mask, unsigned int *sse);
 #define aom_masked_sub_pixel_variance8x8 aom_masked_sub_pixel_variance8x8_c
+
+void aom_minmax_8x8_c(const uint8_t *s, int p, const uint8_t *d, int dp, int *min, int *max);
+#define aom_minmax_8x8 aom_minmax_8x8_c
 
 unsigned int aom_mse16x16_c(const uint8_t *src_ptr, int  source_stride, const uint8_t *ref_ptr, int  recon_stride, unsigned int *sse);
 #define aom_mse16x16 aom_mse16x16_c
@@ -3588,8 +3633,17 @@ void aom_quantize_b_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int1
 void aom_quantize_b_32x32_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
 #define aom_quantize_b_32x32 aom_quantize_b_32x32_c
 
+void aom_quantize_b_32x32_adaptive_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
+#define aom_quantize_b_32x32_adaptive aom_quantize_b_32x32_adaptive_c
+
 void aom_quantize_b_64x64_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
 #define aom_quantize_b_64x64 aom_quantize_b_64x64_c
+
+void aom_quantize_b_64x64_adaptive_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
+#define aom_quantize_b_64x64_adaptive aom_quantize_b_64x64_adaptive_c
+
+void aom_quantize_b_adaptive_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
+#define aom_quantize_b_adaptive aom_quantize_b_adaptive_c
 
 unsigned int aom_sad128x128_c(const uint8_t *src_ptr, int src_stride, const uint8_t *ref_ptr, int ref_stride);
 #define aom_sad128x128 aom_sad128x128_c
@@ -4273,6 +4327,9 @@ unsigned int aom_variance8x4_c(const uint8_t *src_ptr, int source_stride, const 
 
 unsigned int aom_variance8x8_c(const uint8_t *src_ptr, int source_stride, const uint8_t *ref_ptr, int ref_stride, unsigned int *sse);
 #define aom_variance8x8 aom_variance8x8_c
+
+int aom_vector_var_c(const int16_t *ref, const int16_t *src, const int bwl);
+#define aom_vector_var aom_vector_var_c
 
 void aom_dsp_rtcd(void);
 
