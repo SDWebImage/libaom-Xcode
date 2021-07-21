@@ -79,11 +79,17 @@ extern "C" {
 void av1_apply_selfguided_restoration_c(const uint8_t *dat, int width, int height, int stride, int eps, const int *xqd, uint8_t *dst, int dst_stride, int32_t *tmpbuf, int bit_depth, int highbd);
 #define av1_apply_selfguided_restoration av1_apply_selfguided_restoration_c
 
-void av1_apply_temporal_filter_c(const uint8_t *y_frame1, int y_stride, const uint8_t *y_pred, int y_buf_stride, const uint8_t *u_frame1, const uint8_t *v_frame1, int uv_stride, const uint8_t *u_pred, const uint8_t *v_pred, int uv_buf_stride, unsigned int block_width, unsigned int block_height, int ss_x, int ss_y, int strength, const int *blk_fw, int use_32x32, uint32_t *y_accumulator, uint16_t *y_count, uint32_t *u_accumulator, uint16_t *u_count, uint32_t *v_accumulator, uint16_t *v_count);
-#define av1_apply_temporal_filter av1_apply_temporal_filter_c
+void av1_apply_temporal_filter_planewise_c(const struct yv12_buffer_config *ref_frame, const struct macroblockd *mbd, const BLOCK_SIZE block_size, const int mb_row, const int mb_col, const int num_planes, const double *noise_levels, const int use_subblock, const int block_mse, const int *subblock_mses, const int q_factor, const uint8_t *pred, uint32_t *accum, uint16_t *count);
+#define av1_apply_temporal_filter_planewise av1_apply_temporal_filter_planewise_c
+
+void av1_apply_temporal_filter_yuv_c(const struct yv12_buffer_config *ref_frame, const struct macroblockd *mbd, const BLOCK_SIZE block_size, const int mb_row, const int mb_col, const int num_planes, const int strength, const int use_subblock, const int *subblock_filter_weights, const uint8_t *pred, uint32_t *accum, uint16_t *count);
+#define av1_apply_temporal_filter_yuv av1_apply_temporal_filter_yuv_c
 
 int64_t av1_block_error_c(const tran_low_t *coeff, const tran_low_t *dqcoeff, intptr_t block_size, int64_t *ssz);
 #define av1_block_error av1_block_error_c
+
+int64_t av1_block_error_lp_c(const int16_t *coeff, const int16_t *dqcoeff, intptr_t block_size);
+#define av1_block_error_lp av1_block_error_lp_c
 
 void av1_build_compound_diffwtd_mask_c(uint8_t *mask, DIFFWTD_MASK_TYPE mask_type, const uint8_t *src0, int src0_stride, const uint8_t *src1, int src1_stride, int h, int w);
 #define av1_build_compound_diffwtd_mask av1_build_compound_diffwtd_mask_c
@@ -246,9 +252,6 @@ void av1_get_horver_correlation_full_c( const int16_t *diff, int stride, int w, 
 
 void av1_get_nz_map_contexts_c(const uint8_t *const levels, const int16_t *const scan, const uint16_t eob, const TX_SIZE tx_size, const TX_CLASS tx_class, int8_t *const coeff_contexts);
 #define av1_get_nz_map_contexts av1_get_nz_map_contexts_c
-
-void av1_highbd_apply_temporal_filter_c(const uint8_t *yf, int y_stride, const uint8_t *yp, int y_buf_stride, const uint8_t *uf, const uint8_t *vf, int uv_stride, const uint8_t *up, const uint8_t *vp, int uv_buf_stride, unsigned int block_width, unsigned int block_height, int ss_x, int ss_y, int strength, const int *blk_fw, int use_32x32, uint32_t *y_accumulator, uint16_t *y_count, uint32_t *u_accumulator, uint16_t *u_count, uint32_t *v_accumulator, uint16_t *v_count);
-#define av1_highbd_apply_temporal_filter av1_highbd_apply_temporal_filter_c
 
 int64_t av1_highbd_block_error_c(const tran_low_t *coeff, const tran_low_t *dqcoeff, intptr_t block_size, int64_t *ssz, int bd);
 #define av1_highbd_block_error av1_highbd_block_error_c
@@ -430,6 +433,9 @@ void av1_quantize_fp_32x32_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, con
 void av1_quantize_fp_64x64_c(const tran_low_t *coeff_ptr, intptr_t n_coeffs, const int16_t *zbin_ptr, const int16_t *round_ptr, const int16_t *quant_ptr, const int16_t *quant_shift_ptr, tran_low_t *qcoeff_ptr, tran_low_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan, const int16_t *iscan);
 #define av1_quantize_fp_64x64 av1_quantize_fp_64x64_c
 
+void av1_quantize_lp_c(const int16_t *coeff_ptr, intptr_t n_coeffs, const int16_t *round_ptr, const int16_t *quant_ptr, int16_t *qcoeff_ptr, int16_t *dqcoeff_ptr, const int16_t *dequant_ptr, uint16_t *eob_ptr, const int16_t *scan);
+#define av1_quantize_lp av1_quantize_lp_c
+
 void av1_round_shift_array_c(int32_t *arr, int size, int bit);
 #define av1_round_shift_array av1_round_shift_array_c
 
@@ -437,9 +443,6 @@ int av1_selfguided_restoration_c(const uint8_t *dgd8, int width, int height,
                                  int dgd_stride, int32_t *flt0, int32_t *flt1, int flt_stride,
                                  int sgr_params_idx, int bit_depth, int highbd);
 #define av1_selfguided_restoration av1_selfguided_restoration_c
-
-void av1_temporal_filter_plane_c(uint8_t *frame1, unsigned int stride, uint8_t *frame2, unsigned int stride2, int block_width, int block_height, int strength, double sigma, int decay_control, const int *blk_fw, int use_32x32, unsigned int *accumulator, uint16_t *count);
-#define av1_temporal_filter_plane av1_temporal_filter_plane_c
 
 void av1_txb_init_levels_c(const tran_low_t *const coeff, const int width, const int height, uint8_t *const levels);
 #define av1_txb_init_levels av1_txb_init_levels_c

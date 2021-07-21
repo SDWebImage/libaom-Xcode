@@ -27,9 +27,11 @@ Codec library for encoding and decoding AV1 video streams
   s.source           = { :git => 'https://github.com/SDWebImage/libaom-Xcode.git', :tag => s.version.to_s, :submodules => true }
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.7'
+  s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
+
+  s.dependency 'libvmaf'
 
   s.source_files = 'aom/aom/**/*.{h,c}', 'aom/aom_dsp/**/*.{h,c}', 'aom/aom_mem/**/*.{h,c}', 'aom/aom_ports/**/*.{h,c}', 'aom/aom_scale/**/*.{h,c}', 'aom/aom_util/**/*.{h,c}', 'aom/av1/**/*.{h,c}', 'aom/third_party/vector/*.{h,c}', 'aom/third_party/fastfeat/*.{h,c}', 'generate/**/*.{h,c}'
   s.public_header_files = 'aom/aom/*.h'

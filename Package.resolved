@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "libvmaf",
+        "repositoryURL": "https://github.com/SDWebImage/libvmaf-Xcode.git",
+        "state": {
+          "branch": null,
+          "revision": "2cc75ffc9b01c34f04572649c56dc77fac5d91a0",
+          "version": "2.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
