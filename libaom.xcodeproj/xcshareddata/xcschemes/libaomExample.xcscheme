@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1250"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "320F70D82257912C0075679E"
-               BuildableName = "libaom.framework"
-               BlueprintName = "libaom"
+               BlueprintIdentifier = "32E7494D2257AB0C0008FC73"
+               BuildableName = "libaomExample"
+               BlueprintName = "libaomExample"
                ReferencedContainer = "container:libaom.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,15 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "320F70D82257912C0075679E"
-            BuildableName = "libaom.framework"
-            BlueprintName = "libaom"
+            BlueprintIdentifier = "32E7494D2257AB0C0008FC73"
+            BuildableName = "libaomExample"
+            BlueprintName = "libaomExample"
             ReferencedContainer = "container:libaom.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -56,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "320F70D82257912C0075679E"
-            BuildableName = "libaom.framework"
-            BlueprintName = "libaom"
+            BlueprintIdentifier = "32E7494D2257AB0C0008FC73"
+            BuildableName = "libaomExample"
+            BlueprintName = "libaomExample"
             ReferencedContainer = "container:libaom.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
