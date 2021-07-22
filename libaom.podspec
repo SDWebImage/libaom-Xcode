@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'libaom'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'AV1 Codec Library.'
 
 # This description is used to generate tags and improve search results.
