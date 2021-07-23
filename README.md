@@ -1,6 +1,6 @@
 # libaom + Xcode
 
-[![CI Status](http://img.shields.io/travis/SDWebImage/libaom-Xcode.svg?style=flat)](https://travis-ci.org/SDWebImage/libaom-Xcode)
+[![CI Status](http://img.shields.io/travis/SDWebImage/libaom-Xcode.svg?style=flat)](https://travis-ci.com/SDWebImage/libaom-Xcode)
 [![Version](https://img.shields.io/cocoapods/v/libaom.svg?style=flat)](http://cocoapods.org/pods/libaom)
 [![License](https://img.shields.io/cocoapods/l/libaom.svg?style=flat)](http://cocoapods.org/pods/libaom)
 [![Platform](https://img.shields.io/cocoapods/p/libaom.svg?style=flat)](http://cocoapods.org/pods/libaom)
@@ -15,7 +15,7 @@ This repo also including the CocoaPods's spec file to use libaom.
 ## Requirements
 
 + iOS 8
-+ macOS 10.6
++ macOS 10.10
 + tvOS 9.0
 + watchOS 2.0
 
