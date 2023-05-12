@@ -9,5 +9,5 @@
  * PATENTS file, you can obtain it at www.aomedia.org/license/patent.
  */
 #include "aom/aom_codec.h"
-static const char* const cfg = "cmake ../ -G \"Unix Makefiles\" -DAOM_TARGET_CPU=generic";
+static const char* const cfg = "cmake ../ -G \"Unix Makefiles\" -DAOM_TARGET_CPU=generic -DCONFIG_AV1_HIGHBITDEPTH=1 -DCONFIG_AV1_TEMPORAL_DENOISING=1 -DCONFIG_TUNE_VMAF=1";
 const char *aom_codec_build_config(void) {return cfg;}
