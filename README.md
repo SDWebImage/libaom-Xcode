@@ -14,19 +14,30 @@ This repo also including the CocoaPods's spec file to use libaom.
 
 ## Requirements
 
-+ iOS 8
++ iOS 9
 + macOS 10.10
 + tvOS 9.0
 + watchOS 2.0
 
-## Note
+## Note for legacy version
 
 + v1.0.2 is tagged with upstream `1.0.0-errata1-avif`
 + v1.0.1 && v1.0.0 is tagged with upstream `3563b12b` hash, which used by libheif dependency (no huge difference between `1.0.0-errata1`)
 
-From v1.0.1, this Carthage and CocoaPods support, disable the architecture specify assembly code, and use the pure C implementation instead. This because both the lack support for CocoaPods and Xcode NASM compiler.
+From v2.0.0+, the version match the upstream version.
+
+However, the Xcode (SPM/Carthage/CocoaPods) support, disable the architecture specify assembly code, and use the pure C implementation instead. This because both the lack support for CocoaPods and Xcode NASM compiler.
 
 If you want the best performance for specify architecture, use the pre-build static library in `lib` from [1.0.0 release](https://github.com/SDWebImage/libaom-Xcode/releases/tag/1.0.0). Which use the CMake and NASM with the full assembly optimization.
+
+Example to build with NEON support on arm64 iOS:
+
+```
+cd aom
+mkdir dist && cd dist
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../build/cmake/toolchains/arm64-ios.cmake
+make
+```
 
 ## Installation
 
