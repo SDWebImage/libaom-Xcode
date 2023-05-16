@@ -33,9 +33,9 @@ Codec library for encoding and decoding AV1 video streams
 
   s.dependency 'libvmaf', ">= 2.2.0"
 
-  s.source_files = 'aom/aom/**/*.{h,c}', 'aom/aom_dsp/**/*.{h,c}', 'aom/aom_mem/**/*.{h,c}', 'aom/aom_ports/**/*.{h,c}', 'aom/aom_scale/**/*.{h,c}', 'aom/aom_util/**/*.{h,c}', 'aom/av1/**/*.{h,c}', 'aom/third_party/vector/*.{h,c}', 'aom/third_party/fastfeat/*.{h,c}', 'generate/**/*.{h,c}'
+  s.source_files = 'aom/aom/**/*.{h,c}', 'aom/aom_dsp/**/*.{h,c}', 'aom/aom_mem/**/*.{h,c}', 'aom/aom_ports/**/*.{h,c}', 'aom/aom_scale/**/*.{h,c}', 'aom/aom_util/**/*.{h,c}', 'aom/av1/**/*.{h,c}', 'aom/third_party/vector/*.{h,c}', 'aom/third_party/fastfeat/*.{h,c}', 'generate/**/*.{h,c}', 'aom/common/args_helper.{h,c}'
   s.public_header_files = 'aom/aom/*.h'
-  s.exclude_files = 'aom/av1/common/x86', 'aom/av1/encoder/x86', 'aom/aom_dsp/x86', 'aom/aom_dsp/mips', 'aom/aom_dsp/arm', 'aom/aom_dsp/simd', 'aom/aom_scale/mips', 'aom/av1/common/arm', 'aom/av1/common/ppc', 'aom/av1/encoder/mips', 'aom/av1/encoder/arm', 'aom/aom_dsp/ssim.{h,c}', 'aom/aom_dsp/buf_ans.{h,c}', 'aom/aom_ports/ppc*.{h,c}', 'aom/aom_ports/arm*.{h,c}', 'aom/av1/decoder/inspection.{h,c}'
+  s.exclude_files = 'aom/av1/common/x86', 'aom/av1/encoder/x86', 'aom/aom_dsp/x86', 'aom/aom_dsp/mips', 'aom/aom_dsp/arm', 'aom/aom_dsp/simd', 'aom/aom_scale/mips', 'aom/av1/common/arm', 'aom/av1/common/ppc', 'aom/av1/encoder/mips', 'aom/av1/encoder/arm', 'aom/aom_dsp/ssim.{h,c}', 'aom/aom_ports/ppc*.{h,c}', 'aom/aom_ports/arm*.{h,c}', 'aom/av1/decoder/inspection.{h,c}'
 
   s.user_target_xcconfig = {
     'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libaom/aom',
@@ -46,5 +46,5 @@ Codec library for encoding and decoding AV1 video streams
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'WARNING_CFLAGS' => '$(inherited) -Wno-documentation -Wno-conditional-uninitialized -Wno-strict-prototypes -Wno-comma'
   }
-  s.preserve_paths = 'aom/aom', 'aom/aom_dsp', 'aom/aom_mem', 'aom/aom_ports', 'aom/aom_scale', 'aom/aom_util', 'aom/av1', 'aom/third_party', 'generate'
+  s.preserve_paths = 'aom/aom', 'aom/aom_dsp', 'aom/aom_mem', 'aom/aom_ports', 'aom/aom_scale', 'aom/aom_util', 'aom/av1', 'aom/third_party', 'generate', 'aom/common'
 end
